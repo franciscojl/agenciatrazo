@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-05-06_1819",
-    "currentPage": "page1.html",
+    "currentPage": "inicio.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -69,7 +69,7 @@
     "inicio.html": {
       "settings": {
         "main": true,
-        "title": "Trazo - Agencia para emprendedores",
+        "title": "Trazo.cl - Agencia para emprendedores",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
@@ -742,7 +742,7 @@
     },
     "page1.html": {
       "settings": {
-        "title": "Portafolio",
+        "title": "Trazo.cl - Portafolio",
         "order": 1
       },
       "components": [
