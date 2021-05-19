@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "trazo",
-    "currentPage": "franciscojl.github.ioagenciatrazoHome.html.html",
+    "currentPage": "inicio.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -67,7 +67,7 @@
     "gdpr": false
   },
   "pages": {
-    "page1.html": {
+    "portafolio.html": {
       "settings": {
         "title": "Trazo.cl - Portafolio",
         "order": 1
@@ -1509,7 +1509,7 @@
         }
       ]
     },
-    "franciscojl.github.ioagenciatrazoHome.html.html": {
+    "inicio.html": {
       "settings": {
         "main": true,
         "title": "Trazo.cl - Agencia para emprendedores",
