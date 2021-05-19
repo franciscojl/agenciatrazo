@@ -1910,16 +1910,35 @@ a {
 .cid-swFLbOim4R .mbr-section-btn {
   text-align: center;
 }
-.cid-swFM2SYBIW {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.cid-sxP5sf1x7N {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
 }
-.cid-swFM2SYBIW .mbr-section-subtitle {
-  color: #8c00ff;
+.cid-sxP5sf1x7N .card .card-header {
+  background-color: transparent;
+  margin-bottom: 0;
 }
-.cid-swFM2SYBIW .mbr-text {
+.cid-sxP5sf1x7N .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cid-sxP5sf1x7N .mbr-iconfont {
+  padding-left: 1rem;
+  font-family: 'Moririse2' !important;
+  font-size: 1.4rem !important;
+  color: #6592e6;
+}
+.cid-sxP5sf1x7N .panel-body,
+.cid-sxP5sf1x7N .card-header {
+  padding: 1rem 0;
+}
+.cid-sxP5sf1x7N .panel-title-edit {
   color: #353535;
+}
+.cid-sxP5sf1x7N H3 {
+  color: #8c00ff;
 }
 .cid-swFLFoN3nn {
   z-index: 1000;
