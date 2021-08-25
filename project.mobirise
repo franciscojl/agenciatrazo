@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "trazo",
-    "currentPage": "formularios.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -63,7 +63,7 @@
     "versionPublish": "5.3.5",
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "yfk4vkbb28",
+    "mbrsiteDomain": "aq1xjlo1n9",
     "robotsSwitcher": true,
     "sitemapSwitcher": true,
     "sitemapSwitcherAuto": "on",
