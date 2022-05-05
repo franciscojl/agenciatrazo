@@ -1056,9 +1056,6 @@ a {
   padding-bottom: 0rem;
   background-color: #ffffff;
 }
-.cid-swKsOKoLwL .mbr-overlay {
-  z-index: 1;
-}
 @media (min-width: 992px) {
   .cid-swKsOKoLwL .carousel {
     min-height: 800px;
@@ -3520,12 +3517,14 @@ a {
 }
 .cid-sxUDy1JNGY .plan-title {
   color: #8c00ff;
+  text-align: center;
 }
 .cid-sxUDy1JNGY .price-term {
   color: #a3a3a3;
 }
 .cid-sxUDy1JNGY UL {
   text-align: left;
+  color: #ff6666;
 }
 .cid-sxUTT77pM0 {
   padding-top: 5rem;
@@ -10827,20 +10826,16 @@ a {
     left: -1rem;
   }
 }
-.cid-sH83iLpIi9 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+.cid-sH91SSCpuc {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   background-image: url("../../../assets/images/firma-papel-1261x841.png");
 }
-.cid-sH83iLpIi9 .mbr-section-title {
+.cid-sH91SSCpuc .mbr-section-title {
   color: #8c00ff;
-  text-align: center;
 }
-.cid-sH83iLpIi9 .mbr-section-subtitle DIV {
-  text-align: center;
-}
-.cid-sH83iLpIi9 .mbr-section-subtitle {
-  text-align: center;
+.cid-sH91SSCpuc .mbr-text,
+.cid-sH91SSCpuc .mbr-section-btn {
   color: #8c00ff;
 }
 .cid-sGHsQT7XhH {
@@ -12335,20 +12330,16 @@ a {
     left: -1rem;
   }
 }
-.cid-sH862I4t3g {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+.cid-sH940qoEyJ {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-image: url("../../../assets/images/doctor-receta-2000x1333.jpg");
 }
-.cid-sH862I4t3g .mbr-section-title {
+.cid-sH940qoEyJ .mbr-section-title {
   color: #8c00ff;
-  text-align: center;
 }
-.cid-sH862I4t3g .mbr-section-subtitle DIV {
-  text-align: center;
-}
-.cid-sH862I4t3g .mbr-section-subtitle {
-  text-align: center;
+.cid-sH940qoEyJ .mbr-text,
+.cid-sH940qoEyJ .mbr-section-btn {
   color: #8c00ff;
 }
 .cid-sGHsKPPYPx {
