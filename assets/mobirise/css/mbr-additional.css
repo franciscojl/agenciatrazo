@@ -10828,7 +10828,7 @@ a {
 }
 .cid-sH91SSCpuc {
   padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   background-image: url("../../../assets/images/firma-papel-1261x841.png");
 }
 .cid-sH91SSCpuc .mbr-section-title {
@@ -10837,6 +10837,7 @@ a {
 .cid-sH91SSCpuc .mbr-text,
 .cid-sH91SSCpuc .mbr-section-btn {
   color: #8c00ff;
+  text-align: center;
 }
 .cid-sGHsQT7XhH {
   padding-top: 7rem;
@@ -10897,6 +10898,9 @@ a {
 }
 .cid-sGHsQU0WEu .plan-title {
   color: #2d06f5;
+}
+.cid-sGHsQU0WEu UL {
+  text-align: center;
 }
 .cid-sGHsQVk9qx {
   padding-top: 7rem;
@@ -12838,8 +12842,8 @@ a {
   }
 }
 .cid-swFLbOim4R {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
   background-image: url("../../../assets/images/mbr-1705x1013.jpg");
 }
 .cid-swFLbOim4R .mbr-section-title {
@@ -12851,8 +12855,8 @@ a {
   color: #ffffff;
 }
 .cid-tKFSrIl01z {
-  padding-top: 1rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #ffffff;
 }
 .cid-tKFSrIl01z img,
