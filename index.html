@@ -385,28 +385,111 @@ Sabemos lo que es emprender y competir con grandes marcas.<br><br><strong><em>¡
     </div>
 </section>
 
-<section class="form5 cid-swG0AcT7hM" id="form5-c" style="padding: 80px 0; background-color: #ffffff;">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    /* Contenedor principal con esferas de fondo */
+    .gamer-section {
+        position: relative;
+        padding: 100px 0;
+        background-color: #ffffff; /* Fondo Blanco */
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    /* Esferas Neón de fondo */
+    .gamer-section .sphere {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        z-index: -1;
+        opacity: 0.6;
+        animation: floatSphere 15s infinite alternate ease-in-out;
+    }
+    .sphere-1 { width: 300px; height: 300px; background: #00d4ff; top: 10%; left: -5%; animation-delay: 0s; }
+    .sphere-2 { width: 250px; height: 250px; background: #ff007f; bottom: 10%; right: -5%; animation-delay: -5s; }
+    .sphere-3 { width: 200px; height: 200px; background: #8c00ff; top: 40%; right: 20%; animation-delay: -2s; }
+
+    @keyframes floatSphere {
+        from { transform: translate(0, 0) rotate(0deg); }
+        to { transform: translate(50px, 100px) rotate(30deg); }
+    }
+
+    /* Tarjeta Glassmorphism */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.4) !important;
+        backdrop-filter: blur(20px) saturate(160%);
+        -webkit-backdrop-filter: blur(20px) saturate(160%);
+        border: 1px solid rgba(255, 255, 255, 0.7) !important;
+        border-radius: 30px !important;
+        padding: 50px 40px !important;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.05) !important;
+        transition: transform 0.3s ease;
+    }
+    
+    .glass-card:hover {
+        transform: translateY(-5px);
+        border-color: #8c00ff !important;
+    }
+
+    /* Botón estilo Gamer */
+    .btn-gamer {
+        background: linear-gradient(90deg, #25d366, #128c7e) !important;
+        border: none !important;
+        color: white !important;
+        font-weight: 800 !important;
+        letter-spacing: 1px;
+        padding: 18px 40px !important;
+        border-radius: 50px !important;
+        text-transform: uppercase;
+        box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3) !important;
+        transition: 0.3s !important;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .btn-gamer:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5) !important;
+        filter: brightness(1.1);
+    }
+
+    .whatsapp-icon-main {
+        font-size: 4.5rem;
+        background: linear-gradient(45deg, #25d366, #8c00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 25px;
+    }
+</style>
+
+<section class="gamer-section" id="cotizacion-seccion">
+    <div class="sphere sphere-1"></div>
+    <div class="sphere sphere-2"></div>
+    <div class="sphere sphere-3"></div>
+
     <div class="container">
-        <div class="mbr-section-head" style="text-align: center; margin-bottom: 40px;">
-            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-5">
-                <strong>¡Cuéntanos acerca de tu proyecto!</strong>
+        <div class="mbr-section-head" style="text-align: center; margin-bottom: 50px;">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2" style="font-family: 'Orbitron', sans-serif; color: #1a1a1a;">
+                <strong>¡CUÉNTANOS TU PROYECTO!</strong>
             </h3>
-            <p class="mbr-text mbr-fonts-style mt-3 display-7">
-                Haz clic abajo para enviarnos los detalles por WhatsApp y recibir una cotización inmediata.
+            <p class="mbr-text mbr-fonts-style mt-3 display-7" style="color: #555; max-width: 600px; margin: auto;">
+                Recibe una cotización inmediata y personalizada con la mejor tecnología de impresión.
             </p>
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-lg-8 mx-auto" style="text-align: center;">
-                <div style="background: #f8f9fa; padding: 40px; border-radius: 15px; border: 2px dashed #8c00ff;">
-                    <i class="fab fa-whatsapp" style="font-size: 4rem; color: #25d366; margin-bottom: 20px;"></i>
-                    <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-7">
-                        ¿Necesitas logos, talonarios o etiquetas?
+            <div class="col-lg-7 mx-auto" style="text-align: center;">
+                <div class="glass-card">
+                    <i class="fab fa-whatsapp whatsapp-icon-main"></i>
+                    
+                    <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-7" style="color: #333; font-weight: 600;">
+                        ¿Buscas Logos, Talonarios o Etiquetas?
                     </h4>
                     
-                    <a href="https://wa.me/56998105491?text=Hola%20Agencia%20Trazo,%20vi%20su%20web%20y%20me%20gustaría%20cotizar%20un%20proyecto." 
-                       class="btn btn-warning display-4" 
-                       style="background-color: #25d366 !important; border-color: #25d366 !important; color: white !important; font-weight: bold; padding: 15px 30px; border-radius: 50px;">
+                    <a href="https://wa.me/56998105491?text=Hola%20Agencia%20Trazo,%20me%20gustaría%20cotizar%20un%20proyecto." 
+                       class="btn-gamer" 
+                       target="_blank">
                         INICIAR CHAT DE COTIZACIÓN
                     </a>
                 </div>
@@ -519,31 +602,74 @@ Sabemos lo que es emprender y competir con grandes marcas.<br><br><strong><em>¡
 <script src="assets/theme/js/script.js"></script>
 <script src="assets/formoid/formoid.min.js"></script>  
   
-  <input name="animation" type="hidden">
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 <style>
     .whatsapp-float {
         position: fixed;
         bottom: 25px;
         right: 25px;
-        background-color: #25d366;
+        /* Degradado moderno */
+        background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
         color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 50px;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 32px;
         z-index: 9999;
         text-decoration: none;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        
+        /* Animaciones */
+        animation: floating 3s ease-in-out infinite, pulse-green 2s infinite;
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    /* Efecto al pasar el mouse */
+    .whatsapp-float:hover {
+        transform: scale(1.1) rotate(10deg);
+        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    /* Animación 1: Flotación suave (arriba y abajo) */
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+
+    /* Animación 2: Pulso de onda sutil detrás del botón */
+    @keyframes pulse-green {
+        0% {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+    }
+
+    /* Estilo del icono para que respire */
+    .whatsapp-float i {
+        animation: icon-wiggle 5s infinite;
+    }
+
+    @keyframes icon-wiggle {
+        0%, 90%, 100% { transform: rotate(0deg); }
+        92% { transform: rotate(-15deg); }
+        95% { transform: rotate(15deg); }
+        97% { transform: rotate(-15deg); }
     }
 </style>
+
 <a href="https://wa.me/56998105491" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
-</a>`;
+</a>
 
 
   </body>
