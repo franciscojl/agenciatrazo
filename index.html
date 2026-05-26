@@ -1,676 +1,1738 @@
-<!DOCTYPE html>
-<html  >
-<head>
-  
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.13, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="assets/images/index-meta.png">
-  <meta property="og:image" content="assets/images/index-meta.png">
-  <meta name="twitter:title" content="Trazo.cl - Agencia de Diseño e Imprenta">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo-trazo-web-124x103.png" type="image/x-icon">
-  <meta name="description" content="Imprenta en santiago centro, Chile, Talonarios, Diseño de logo, stickers, flyers, tarjetas y recetas">
-  
-  
-  <title>Trazo.cl - Agencia de Diseño e Imprenta</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/parallax/jarallax.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"></noscript>
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=Rd0nlf"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=Rd0nlf" type="text/css">
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agencia Trazo — Diseño gráfico, talonarios personalizados, branding, logos y papelería corporativa en Santiago, Chile.">
+  <link rel="shortcut icon" href="assets/images/logo-trazo-web-124x103.png" type="image/x-icon">
+  <title>Agencia Trazo — Diseño e Imprenta en Santiago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;790&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* ===== TOKENS ===== */
+:root{
+  --bg:#F8F7FF; --bg2:#EEEAF8;
+  --mg:#E8005A; --mg2:#FF1A6E;
+  --vi:#5B21B6; --vi2:#7C3AED;
+  --dark:#120D2E; --dark2:#1E1650;
+  --text:#1a1535; --muted:#6B6490;
+  --glass:rgba(255,255,255,0.6);
+  --glass-b:rgba(255,255,255,0.86);
+  --gborder:rgba(91,33,182,0.11);
+  --gborder2:rgba(232,0,90,0.15);
+  --shadow:0 8px 32px rgba(91,33,182,0.08);
+  --shadow-h:0 20px 60px rgba(91,33,182,0.16);
+  --mg-glow:rgba(232,0,90,0.22);
+  --vi-glow:rgba(91,33,182,0.18);
+  --rad:18px; --rad-lg:26px;
+  --nav-h:62px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+img{display:block;max-width:100%;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--mg);border-radius:2px;}
+
+/* ===== AMBIENT 3 ORBES cyan / turquesa / deep purple ===== */
+#ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.amb{position:absolute;border-radius:50%;filter:blur(80px);}
+.amb-1{width:750px;height:750px;background:radial-gradient(circle,#00B4D8,#0077B6);opacity:.13;top:-220px;right:-180px;animation:ambDrift 16s ease-in-out infinite;}
+.amb-2{width:600px;height:600px;background:radial-gradient(circle,#2DD4BF,#0D9488);opacity:.12;bottom:-180px;left:-130px;animation:ambDrift 20s ease-in-out infinite reverse;}
+.amb-3{width:500px;height:500px;background:radial-gradient(circle,#4A00E0,#240090);opacity:.10;top:40%;left:35%;animation:ambDrift3 24s ease-in-out infinite 3s;}
+@keyframes ambDrift{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(-80px,60px) scale(1.1);}66%{transform:translate(50px,-90px) scale(0.95);}}
+@keyframes ambDrift3{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(90px,-70px) scale(1.08);}66%{transform:translate(-60px,80px) scale(0.92);}}
+#grain{position:fixed;inset:0;z-index:1;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.016;}
+
+.z{position:relative;z-index:2;}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem;}
+
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.9rem;border-radius:100px;font-size:.85rem;font-weight:500;transition:all .35s;white-space:nowrap;}
+.btn-mg{background:linear-gradient(135deg,var(--mg),var(--mg2));color:#fff;box-shadow:0 8px 28px var(--mg-glow);}
+.btn-mg:hover{transform:translateY(-3px);box-shadow:0 16px 40px var(--mg-glow);}
+.btn-vi{background:linear-gradient(135deg,var(--vi),var(--vi2));color:#fff;box-shadow:0 8px 28px var(--vi-glow);}
+.btn-vi:hover{transform:translateY(-3px);box-shadow:0 16px 40px var(--vi-glow);}
+.btn-ghost{background:transparent;border:1.5px solid var(--gborder2);color:var(--mg);}
+.btn-ghost:hover{background:var(--mg);color:#fff;transform:translateY(-3px);}
+.btn-outline-dark{background:transparent;border:1.5px solid rgba(18,13,46,0.2);color:var(--dark);}
+.btn-outline-dark:hover{background:var(--dark);color:#fff;transform:translateY(-3px);}
+
+/* ===== NAV — glassmorphism visible pero transparente ===== */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  height:var(--nav-h);padding:0 4vw;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  backdrop-filter:blur(32px) saturate(2.2) brightness(1.08);
+  -webkit-backdrop-filter:blur(32px) saturate(2.2) brightness(1.08);
+  background:rgba(248,247,255,0.45);
+  border-bottom:1px solid rgba(255,255,255,0.35);
+  box-shadow:0 1px 24px rgba(91,33,182,0.06),inset 0 1px 0 rgba(255,255,255,0.6);
+  transition:background .4s,box-shadow .4s;
+}
+nav.scrolled{background:rgba(248,247,255,0.65);box-shadow:0 4px 28px rgba(91,33,182,0.09),inset 0 1px 0 rgba(255,255,255,0.7);}
+.nav-logo{display:flex;align-items:center;gap:.6rem;flex-shrink:0;}
+.nav-logo img{height:2.1rem;}
+.nav-logo-txt{font-family:'Syne',sans-serif;font-weight:800;font-size:.9rem;letter-spacing:-.02em;color:var(--dark);}
+.nav-logo-txt span{color:var(--mg);}
+.nav-links{display:flex;align-items:center;gap:0;flex:1;justify-content:center;}
+.nav-links>li>a{font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;font-weight:500;color:var(--muted);padding:.4rem .65rem;border-radius:100px;transition:all .25s;display:flex;align-items:center;gap:.2rem;white-space:nowrap;}
+.nav-links>li>a:hover{color:var(--dark);background:rgba(91,33,182,0.06);}
+.nav-drop{position:relative;}
+.nav-drop>a::after{content:'▾';font-size:.52rem;transition:transform .25s;}
+.nav-drop:hover>a::after{transform:rotate(180deg);}
+.drop-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--glass-b);backdrop-filter:blur(28px);border:1px solid var(--gborder);border-radius:var(--rad);padding:1rem .5rem .5rem;min-width:220px;box-shadow:var(--shadow-h);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:600;}
+.nav-drop::after{content:'';position:absolute;top:100%;left:0;right:0;height:1rem;background:transparent;}
+.nav-drop:hover .drop-menu{opacity:1;pointer-events:all;transform:translateX(-50%) translateY(0);}
+.drop-menu a{display:block;padding:.48rem .9rem;border-radius:10px;font-size:.75rem;color:var(--muted);transition:all .2s;}
+.drop-menu a:hover{background:rgba(232,0,90,0.07);color:var(--mg);}
+.nav-ig{font-size:1.25rem;color:var(--vi);transition:all .3s;display:flex;align-items:center;padding:.4rem;}
+.nav-ig:hover{color:var(--mg);transform:scale(1.1);}
+.nav-cta{background:linear-gradient(135deg,var(--mg),var(--mg2));color:#fff;padding:.52rem 1.2rem;border-radius:100px;font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:all .3s;box-shadow:0 4px 18px var(--mg-glow);flex-shrink:0;}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px var(--mg-glow);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.4rem;margin-left:.3rem;flex-shrink:0;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .3s;}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* ===== MOBILE MENU ===== */
+.mobile-nav{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;z-index:490;background:rgba(248,247,255,0.98);backdrop-filter:blur(28px);overflow-y:auto;padding:1.5rem 2rem 4rem;opacity:0;transform:translateY(-8px);transition:opacity .35s,transform .35s;pointer-events:none;}
+.mobile-nav.open{opacity:1;transform:none;pointer-events:all;}
+.mob-item{border-bottom:1px solid var(--gborder);}
+.mob-link{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:700;color:var(--dark);transition:color .25s;cursor:pointer;}
+.mob-link:hover,.mob-link.plain:hover{color:var(--mg);}
+.mob-link.plain{display:block;}
+.mob-arrow{font-size:.65rem;color:var(--muted);transition:transform .3s;flex-shrink:0;padding:.3rem;}
+.mob-arrow.open{transform:rotate(180deg);}
+.mob-sub{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.mob-sub.open{max-height:500px;}
+.mob-sub a{display:block;padding:.6rem 1rem;font-size:.92rem;color:var(--muted);border-radius:10px;transition:all .2s;}
+.mob-sub a:hover{color:var(--mg);background:rgba(232,0,90,0.05);}
+.mob-cta{display:block;text-align:center;margin-top:2rem;background:linear-gradient(135deg,var(--mg),var(--mg2));color:#fff;padding:.95rem;border-radius:100px;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;box-shadow:0 8px 28px var(--mg-glow);}
+
+/* ===== TICKER ===== */
+.prod-ticker{margin-top:var(--nav-h);background:rgba(248,247,255,0.95);border-bottom:1px solid var(--gborder);overflow:hidden;padding:.32rem 0;position:relative;z-index:2;}
+.prod-ticker::before,.prod-ticker::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:3;pointer-events:none;}
+.prod-ticker::before{left:0;background:linear-gradient(to right,var(--bg),transparent);}
+.prod-ticker::after{right:0;background:linear-gradient(to left,var(--bg),transparent);}
+.ticker-track{display:flex;gap:0;width:max-content;animation:tickerMove 42s linear infinite;}
+.ticker-track:hover{animation-play-state:paused;}
+.ticker-item{display:inline-flex;align-items:center;gap:.55rem;padding:.2rem 1.2rem;white-space:nowrap;border-right:1px solid var(--gborder);}
+.ticker-img{width:34px;height:34px;border-radius:8px;object-fit:cover;flex-shrink:0;border:1px solid var(--gborder);}
+.ticker-item strong{font-family:'Syne',sans-serif;font-weight:700;font-size:.7rem;color:var(--dark);}
+.ticker-price{font-family:'Syne',sans-serif;font-weight:800;font-size:.7rem;background:linear-gradient(135deg,var(--mg),var(--vi2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+@keyframes tickerMove{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:calc(100vh - var(--nav-h) - 42%);
+  display:flex;align-items:center;
+  padding:4rem 5vw 5rem;
+  position:relative;overflow:hidden;z-index:2;
+}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(91,33,182,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(91,33,182,.04) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 80% 60% at 55% 50%,black 20%,transparent 100%);}
+.hero-fade{display:none;}
+.hero-layout{display:grid;grid-template-columns:1fr 460px;gap:2rem;align-items:center;width:100%;max-width:1200px;margin:0 auto;position:relative;z-index:2;}
+
+/* ===== HERO VISUAL — glassmorphism cards ===== */
+.hero-visual-3d{
+  position:relative;
+  width:100%;height:360px;
+  flex-shrink:0;
+  animation:fadeUp 10s .10s ease both;
+}
+/* tarjeta central */
+.hv-main{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:210px;
+  background:rgba(255,255,255,0.72);
+  border:1px solid rgba(255,255,255,0.9);
+  border-radius:var(--rad-lg);
+  padding:1.2rem;
+  box-shadow:0 20px 60px rgba(91,33,182,0.14), 0 2px 0 rgba(255,255,255,0.9) inset;
+  backdrop-filter:blur(24px);
+  animation:cardMain 6s ease-in-out infinite;
+  z-index:3;
+}
+/* ===== HERO CARDS STACK ===== */
+.hv-stack{
+  position:absolute;
+  top:35%;left:50%;
+  transform:translate(-50%,-50%);
+  width:210px;height:290px;
+}
+.hv-card{
+  position:absolute;inset:0;
+  background:rgba(255,255,255,0.78);
+  border:1px solid rgba(255,255,255,0.92);
+  border-radius:var(--rad-lg);
+  padding:1.2rem;
+  box-shadow:0 20px 60px rgba(91,33,182,0.12),0 2px 0 rgba(255,255,255,0.9) inset;
+  backdrop-filter:blur(24px);
+  display:flex;flex-direction:column;
+  transition:transform .8s cubic-bezier(.4,0,.2,1), opacity .8s ease, box-shadow .8s ease;
+  will-change:transform,opacity;
+}
+/* posiciones: 0=frente, 1=medio, 2=atrás */
+.hv-card[data-pos="0"]{
+  transform:translateY(0) translateX(0) scale(1) rotate(-1deg);
+  opacity:1;z-index:3;
+  box-shadow:0 24px 70px rgba(91,33,182,0.18),0 2px 0 rgba(255,255,255,0.9) inset;
+  animation:cardFloat0 6s ease-in-out infinite;
+}
+.hv-card[data-pos="1"]{
+  transform:translateY(18px) translateX(22px) scale(0.93) rotate(3deg);
+  opacity:0.82;z-index:2;
+  animation:cardFloat1 6s ease-in-out infinite .4s;
+}
+.hv-card[data-pos="2"]{
+  transform:translateY(34px) translateX(40px) scale(0.86) rotate(6deg);
+  opacity:0.55;z-index:1;
+  animation:cardFloat2 6s ease-in-out infinite .8s;
+}
+@keyframes cardFloat0{
+  0%,100%{transform:translateY(0) translateX(0) scale(1) rotate(-1deg);}
+  40%{transform:translateY(-12px) translateX(0) scale(1) rotate(0.5deg);}
+  70%{transform:translateY(-6px) translateX(0) scale(1) rotate(-1.5deg);}
+}
+@keyframes cardFloat1{
+  0%,100%{transform:translateY(18px) translateX(22px) scale(0.93) rotate(3deg);}
+  40%{transform:translateY(8px) translateX(22px) scale(0.93) rotate(2deg);}
+  70%{transform:translateY(14px) translateX(22px) scale(0.93) rotate(3.5deg);}
+}
+@keyframes cardFloat2{
+  0%,100%{transform:translateY(34px) translateX(40px) scale(0.86) rotate(6deg);}
+  40%{transform:translateY(26px) translateX(40px) scale(0.86) rotate(5deg);}
+  70%{transform:translateY(30px) translateX(40px) scale(0.86) rotate(6.5deg);}
+}
+/* durante rotación — pausa float */
+.hv-card.rotating{animation:none !important;}
+@keyframes cardMain{0%,100%{transform:translate(-50%,-50%) translateY(0) rotate(-1deg);}25%{transform:translate(-50%,-50%) translateY(-14px) rotate(1deg);}50%{transform:translate(-50%,-50%) translateY(-8px) rotate(-0.5deg);}75%{transform:translate(-50%,-50%) translateY(-18px) rotate(1.5deg);}}
+.hv-main-img{width:100%;aspect-ratio:1;border-radius:14px;overflow:hidden;background:var(--bg2);margin-bottom:.85rem;}
+.hv-main-img img{width:100%;height:100%;object-fit:cover;}
+.hv-tag{display:inline-flex;align-items:center;gap:.4rem;background:rgba(232,0,90,0.09);border:1px solid rgba(232,0,90,0.2);padding:.22rem .7rem;border-radius:100px;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mg);font-weight:700;margin-bottom:.45rem;}
+.hv-prod-name{font-family:'Syne',sans-serif;font-weight:800;font-size:.88rem;color:var(--dark);margin-bottom:.18rem;}
+.hv-price-lbl{font-size:.55rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+.hv-prod-price{font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;background:linear-gradient(135deg,var(--mg),var(--vi2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+
+/* badges flotantes */
+.hv-badge{
+  position:absolute;
+  background:rgba(255,255,255,0.75);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.9);
+  border-radius:14px;padding:.65rem 1rem;
+  box-shadow:0 8px 32px rgba(91,33,182,0.1);
+  font-size:.72rem;white-space:nowrap;z-index:4;
+}
+.hv-badge strong{font-family:'Syne',sans-serif;font-weight:800;font-size:.88rem;color:var(--dark);display:block;}
+.hv-badge span{font-size:.70rem;color:var(--muted);}
+.hv-b1{top:6%;right:2%;animation:badge1 7s ease-in-out infinite;}
+.hv-b2{bottom:10%;left:0%;animation:badge2 8s ease-in-out infinite 0.8s;}
+.hv-b3{top:24%;left:2%;animation:badge3 6.5s ease-in-out infinite 1.6s;}
+@keyframes badge1{
+  0%,100%{transform:translateY(0) rotate(1deg);}
+  33%{transform:translateY(-12px) rotate(-1deg);}
+  66%{transform:translateY(-6px) rotate(2deg);}
+}
+@keyframes badge2{
+  0%,100%{transform:translateY(0) rotate(-1.5deg);}
+  40%{transform:translateY(12px) rotate(1deg);}
+  70%{transform:translateY(6px) rotate(-2deg);}
+}
+@keyframes badge3{
+  0%,100%{transform:translateY(0) rotate(0.5deg);}
+  50%{transform:translateY(-10px) rotate(-1.5deg);}
+  80%{transform:translateY(-4px) rotate(1deg);}
+}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(232,0,90,0.07);border:1px solid rgba(232,0,90,0.18);padding:.4rem 1.1rem;border-radius:100px;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mg);font-weight:600;margin-bottom:1.8rem;animation:fadeDown .8s ease both;}
+.bdot{width:6px;height:6px;background:var(--mg);border-radius:50%;animation:blink 2s ease infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-12px);}to{opacity:1;transform:none;}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+.hero-title{font-family:'Syne',sans-serif;font-size:clamp(2.8rem,6.5vw,6rem);font-weight:800;line-height:1.02;letter-spacing:-.04em;color:var(--dark);margin-bottom:.2rem;animation:fadeUp 1s .2s ease both;}
+.tw-wrap{font-family:'Syne',sans-serif;font-size:clamp(2.8rem,6.5vw,6rem);font-weight:800;line-height:1.02;letter-spacing:-.04em;margin-bottom:1.8rem;min-height:1.1em;animation:fadeUp 1s .35s ease both;}
+#tw-text{background:linear-gradient(100deg,var(--mg) 0%,#C026D3 45%,var(--vi2) 85%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradMove 5s linear infinite;}
+@keyframes gradMove{0%{background-position:0% center;}100%{background-position:200% center;}}
+.tw-cur{display:inline-block;width:4px;height:.75em;background:var(--mg);margin-left:2px;border-radius:2px;animation:blink .9s step-end infinite;vertical-align:text-bottom;}
+.hero-sub{font-size:.98rem;font-weight:500;line-height:1.8;color:var(--muted);max-width:500px;margin-bottom:2.2rem;animation:fadeUp 5s .5s ease both;}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp 1s .65s ease both;}
+
+/* =============================================
+   CAROUSEL PRODUCTOS — elevación central
+============================================= */
+.carousel-section{
+  background:var(--bg2);
+  border-top:1px solid var(--gborder);
+  border-bottom:1px solid var(--gborder);
+  padding:2rem 0 2rem;
+  overflow:hidden;
+  position:relative;z-index:3;
   
-  
-  
+}
+.carousel-head{
+  text-align:center;margin-bottom:6.6rem;padding:0 5vw;
+  position:relative;z-index:10;
+}
+.label-tag{display:inline-flex;align-items:center;gap:.6rem;font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mg);font-weight:600;margin-bottom:.6rem;}
+.label-tag::before{content:'';display:block;width:18px;height:1.5px;background:var(--mg);}
+.carousel-head h2{font-family:'Syne',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:-.03em;color:var(--dark);}
+.carousel-head h2 span{color:var(--mg);}
+
+.carousel-stage{
+  position:relative;
+  height:340px;
+  display:flex;align-items:center;justify-content:center;
+  perspective:1400px;
+  cursor:grab;
+  user-select:none;
+  overflow:visible;
+}
+.carousel-stage.dragging{cursor:grabbing;}
+
+/* cada card posicionada absolute */
+.c-card{
+  position:absolute;
+  width:320px;
+  background:rgba(255,255,255,0.55);
+  backdrop-filter:blur(24px) saturate(1.8);
+  -webkit-backdrop-filter:blur(24px) saturate(1.8);
+  border:1px solid rgba(255,255,255,0.72);
+  border-radius:22px;
+  padding:1.5rem;
+  box-shadow:0 8px 32px rgba(91,33,182,0.08);
+  transition:transform 2s cubic-bezier(.4,0,.2,1), opacity .55s ease, box-shadow .55s ease, border-color .55s ease;
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  pointer-events:auto;
+}
+/* barra inferior */
+.c-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--mg),var(--vi2));
+  transform:scaleX(0);transition:transform .5s;
+}
+.c-card.is-center::after{transform:scaleX(1);}
+.c-card.is-center{
+  box-shadow:0 32px 80px rgba(91,33,182,0.18), 0 0 0 1px rgba(232,0,90,0.2), 0 0 40px rgba(0,180,216,0.1);
+  border-color:rgba(255,255,255,0.9);
+}
+.c-img{aspect-ratio:1;border-radius:14px;overflow:hidden;background:var(--bg);margin-bottom:1rem;}
+.c-img img{width:100%;height:100%;object-fit:cover;pointer-events:none;}
+.c-name{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;color:var(--dark);margin-bottom:.3rem;}
+.c-desc{font-size:.8rem;color:var(--muted);line-height:1.55;flex:1;margin-bottom:.9rem;}
+.c-price-row{display:flex;flex-direction:column;gap:.5rem;}
+.c-price{font-family:'Syne',sans-serif;font-weight:800;font-size:1.15rem;background:linear-gradient(135deg,var(--mg),var(--vi2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.c-price-lbl{font-size:.62rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
+.c-btn{font-size:.84rem;padding:.45rem .95rem;border-radius:100px;background:rgba(232,0,90,0.08);border:1px solid rgba(232,0,90,0.2);color:var(--mg);font-weight:600;transition:all .6s;white-space:nowrap;text-align:center;display:block;}
+.c-card.is-center .c-btn{background:var(--mg);color:#fff;border-color:var(--mg);}
+
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:5.7rem;position:relative;z-index:10;}
+.sl-btn{width:40px;height:40px;border-radius:50%;background:var(--glass-b);border:1px solid var(--gborder);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--dark);cursor:pointer;transition:all .3s;box-shadow:var(--shadow);}
+.sl-btn:hover{background:var(--mg);color:#fff;border-color:var(--mg);}
+.sl-dots{display:flex;gap:.4rem;}
+.sl-dot{width:6px;height:6px;border-radius:50%;background:rgba(91,33,182,0.2);cursor:pointer;transition:all .3s;}
+.sl-dot.active{background:var(--mg);width:18px;border-radius:4px;}
+
+/* =============================================
+   SPLIT CARDS — futurista glassmorphism + acordeón
+============================================= */
+.split-section{padding:6rem 0;overflow:hidden;}
+.section-head{text-align:center;margin-bottom:2.5rem;}
+.h2{font-family:'Syne',sans-serif;font-size:clamp(1.9rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-bottom:.6rem;color:var(--dark);}
+.h2 em{font-style:normal;background:linear-gradient(120deg,var(--mg),var(--vi2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+
+/* Viewport para slider móvil */
+.split-viewport{overflow:hidden;position:relative;}
+.split-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;
+}
+
+.split-card{
+  background:rgba(255,255,255,0.22);
+  backdrop-filter:blur(32px) saturate(1.6);
+  -webkit-backdrop-filter:blur(32px) saturate(1.6);
+  border:1px solid rgba(255,255,255,0.45);
+  border-radius:var(--rad-lg);padding:2.5rem 2.2rem;
+  box-shadow:0 8px 40px rgba(91,33,182,0.07), 0 1px 0 rgba(255,255,255,0.8) inset;
+  position:relative;overflow:hidden;
+  transition:all .4s;display:flex;flex-direction:column;
+}
+.split-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 20px 60px rgba(91,33,182,0.13), 0 1px 0 rgba(255,255,255,0.9) inset;
+  border-color:rgba(255,255,255,0.65);
+}
+
+/* línea de color superior */
+.split-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+}
+.split-card.mg::after{background:linear-gradient(90deg,var(--mg),#C026D3,var(--vi2));}
+.split-card.vi::after{background:linear-gradient(90deg,var(--vi2),#00D4FF,#2DD4BF);}
+
+/* decoración esquina */
+.split-card::before{
+  content:'';position:absolute;top:0;right:0;
+  width:180px;height:180px;
+  border-radius:0 var(--rad-lg) 0 100%;
+  opacity:.04;transition:opacity .4s;
+}
+.split-card.mg::before{background:var(--mg);}
+.split-card.vi::before{background:var(--vi2);}
+.split-card:hover::before{opacity:.08;}
+
+.split-icon{
+  font-size:2rem;margin-bottom:1.2rem;
+  width:56px;height:56px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.split-icon.mg{
+  background:rgba(232,0,90,0.07);
+  box-shadow:0 0 20px rgba(232,0,90,0.1),inset 0 1px 0 rgba(255,255,255,0.5);
+}
+.split-icon.vi{
+  background:rgba(124,58,237,0.07);
+  box-shadow:0 0 20px rgba(124,58,237,0.1),inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.split-sub{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:.5rem;font-weight:700;}
+.split-sub.mg{color:var(--mg);}
+.split-sub.vi{color:var(--vi2);}
+
+.split-card h3{
+  font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;
+  letter-spacing:-.02em;color:var(--dark);margin-bottom:.55rem;
+}
+.split-card>p{
+  color:var(--muted);font-size:.88rem;line-height:1.75;margin-bottom:1.4rem;
+}
+
+/* acordeón */
+.split-accordion{margin-bottom:1.6rem;}
+.split-acc-toggle{
+  display:flex;align-items:center;gap:.6rem;
+  cursor:pointer;
+  background:rgba(255,255,255,0.5);
+  border:1px solid rgba(255,255,255,0.7);
+  border-radius:100px;
+  padding:.55rem 1.1rem;
+  font-size:.76rem;font-weight:700;
+  color:var(--dark);
+  transition:all .3s;
+  backdrop-filter:blur(10px);
+  width:fit-content;
+  user-select:none;
+}
+.split-card.mg .split-acc-toggle:hover{background:rgba(232,0,90,0.08);border-color:rgba(232,0,90,0.25);color:var(--mg);}
+.split-card.vi .split-acc-toggle:hover{background:rgba(124,58,237,0.08);border-color:rgba(124,58,237,0.25);color:var(--vi2);}
+.split-acc-toggle.open{border-radius:14px 14px 0 0;border-bottom-color:transparent;}
+.acc-icon{font-size:.6rem;transition:transform .3s;flex-shrink:0;}
+.split-acc-toggle.open .acc-icon{transform:rotate(180deg);}
+
+.split-acc-body{
+  max-height:0;overflow:hidden;
+  transition:max-height .4s ease;
+  background:rgba(255,255,255,0.35);
+  border:1px solid rgba(255,255,255,0.7);
+  border-top:none;border-radius:0 0 14px 14px;
+}
+.split-acc-body.open{max-height:400px;}
+.split-list{
+  display:flex;flex-direction:column;gap:.4rem;
+  padding:2rem 2.1rem 2.1rem;
+}
+.split-list li{
+  font-size:.82rem;color:var(--text);
+  display:flex;align-items:flex-start;gap:.55rem;
+}
+.split-list li::before{
+  content:'✓';flex-shrink:0;font-size:.7rem;font-weight:700;
+  width:16px;height:16px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin-top:.08rem;
+}
+.split-card.mg .split-list li::before{background:rgba(232,0,90,0.1);color:var(--mg);}
+.split-card.vi .split-list li::before{background:rgba(124,58,237,0.1);color:var(--vi2);}
+
+/* botones en fila */
+.split-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:auto;padding-top:1.4rem;}
+
+/* dots para slider móvil */
+.split-dots{
+  display:none;
+  justify-content:center;gap:.5rem;
+  margin-top:1.4rem;
+}
+.split-dot{width:6px;height:6px;border-radius:50%;background:rgba(91,33,182,0.2);cursor:pointer;transition:all .3s;}
+.split-dot.active{background:var(--mg);width:18px;border-radius:4px;}
+
+/* =============================================
+   NAMINGLAB — visual 3D canvas
+============================================= */
+.nl-section{padding:6rem 0;background:var(--bg2);border-top:1px solid var(--gborder);}
+.nl-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.nl-eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.18);padding:.4rem 1rem;border-radius:100px;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:var(--vi2);font-weight:600;margin-bottom:1.4rem;}
+.nl-title{font-family:'Syne',sans-serif;font-size:clamp(1.9rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;color:var(--dark);line-height:1.05;margin-bottom:.9rem;}
+.nl-em{background:linear-gradient(120deg,var(--vi2),var(--mg));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nl-desc{color:var(--muted);font-size:.92rem;line-height:1.8;margin-bottom:1rem;}
+.nl-features{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;}
+.nl-feat{display:flex;align-items:center;gap:.75rem;font-size:.83rem;color:var(--text);}
+.nl-feat-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--vi2),var(--mg));}
+
+/* NamingLab 3D canvas container */
+.nl-canvas-wrap{
+  position:relative;height:380px;
+  border-radius:var(--rad-lg);overflow:hidden;
+  background:linear-gradient(135deg,rgba(124,58,237,0.06),rgba(232,0,90,0.04));
+}
+.nl-orb{position:absolute;border-radius:60% 40% 70% 30%/50% 60% 40% 50%;filter:blur(1px);}
+.nl-orb-1{width:240px;height:240px;background:linear-gradient(135deg,rgba(124,58,237,.42),rgba(232,0,90,.3));top:50%;left:50%;transform:translate(-50%,-50%);animation:morphA 9s ease-in-out infinite;}
+.nl-orb-2{width:120px;height:120px;background:rgba(232,0,90,.35);top:8%;right:8%;border-radius:40% 60% 30% 70%/60% 40% 70% 30%;animation:morphB 7s ease-in-out infinite 1s;}
+.nl-orb-3{width:80px;height:80px;background:rgba(124,58,237,.4);bottom:10%;left:8%;border-radius:70% 30% 40% 60%/30% 70% 50% 50%;animation:morphC 11s ease-in-out infinite .5s;}
+@keyframes morphA{0%,100%{border-radius:60% 40% 70% 30%/50% 60% 40% 50%;transform:translate(-50%,-50%) scale(1);}33%{border-radius:30% 70% 50% 50%/70% 30% 60% 40%;transform:translate(-50%,-50%) scale(1.07);}66%{border-radius:50% 50% 30% 70%/40% 60% 50% 50%;transform:translate(-50%,-50%) scale(.96);}}
+@keyframes morphB{0%,100%{border-radius:40% 60% 30% 70%/60% 40% 70% 30%;transform:scale(1);}50%{border-radius:60% 40% 50% 50%/30% 60% 40% 70%;transform:scale(1.14);}}
+@keyframes morphC{0%,100%{border-radius:70% 30% 40% 60%/30% 70% 50% 50%;transform:scale(1);}50%{border-radius:40% 60% 70% 30%/50% 40% 60% 40%;transform:scale(1.18);}}
+/* etiquetas flotantes sobre el canvas NamingLab */
+.nl-float-tag{
+  position:absolute;
+  background:rgba(255,255,255,0.72);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,0.8);
+  border-radius:12px;padding:.6rem 1rem;
+  box-shadow:var(--shadow);font-size:.73rem;color:var(--muted);
+  pointer-events:none;z-index:5;
+}
+.nl-float-tag strong{color:var(--dark);font-weight:700;}
+.nl-float-tag.one{top:8%;left:4%;animation:hvFloat 6s ease-in-out infinite;}
+.nl-float-tag.two{bottom:8%;right:4%;animation:hvFloat 7s ease-in-out infinite 1.5s;}
+
+/* =============================================
+   CTA WHATSAPP — glassmorphism ligero + neon CSS
+============================================= */
+.cta-section{
+  padding:6rem 0;
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#0A0520 0%,#0D0826 50%,#080118 100%);
+}
+.cta-orb{position:absolute;border-radius:50%;pointer-events:none;will-change:transform;}
+.cta-orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(0,180,216,0.18) 0%,transparent 70%);top:-150px;left:50%;transform:translateX(-50%);animation:ctaOrbFloat1 20s ease-in-out infinite;}
+.cta-orb-2{width:380px;height:380px;background:radial-gradient(circle,rgba(74,0,224,0.16) 0%,transparent 70%);bottom:-120px;right:-80px;animation:ctaOrbFloat2 25s ease-in-out infinite;}
+.cta-orb-3{width:300px;height:300px;background:radial-gradient(circle,rgba(232,0,90,0.1) 0%,transparent 70%);bottom:-80px;left:-60px;animation:ctaOrbFloat1 18s ease-in-out infinite reverse;}
+@keyframes ctaOrbFloat1{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(-40px);}}
+@keyframes ctaOrbFloat2{0%,100%{transform:translate(0,0);}50%{transform:translate(-30px,-50px);}}
+.cta-neon-line{position:absolute;left:0;right:0;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(0,212,255,0.25),transparent);}
+.cta-neon-line.top{top:0;}
+.cta-neon-line.bottom{bottom:0;}
+
+/* tarjeta glassmorphism translúcida */
+.cta-neon-card{
+  position:relative;z-index:2;
+  max-width:680px;margin:0 auto;
+  border:1px solid rgba(0,212,255,0.18);
+  border-radius:28px;padding:4rem;
+  text-align:center;
+  background:rgba(255,255,255,0.04);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  box-shadow:0 0 60px rgba(0,212,255,0.05),inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+/* ícono WA — solo translateY, nada pesado */
+.wa-icon-wrap{position:relative;width:88px;height:88px;margin:0 auto 2rem;}
+.wa-icon-core{
+  position:absolute;inset:0;border-radius:50%;
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2.4rem;color:#fff;z-index:2;
+  box-shadow:0 0 24px rgba(37,211,102,0.5);
+  animation:waSimpleFloat 3.5s ease-in-out infinite;
+  will-change:transform;
+}
+@keyframes waSimpleFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+
+.wa-neon-ring{
+  position:absolute;top:50%;left:50%;border-radius:50%;
+  border:1px solid rgba(37,211,102,0.3);
+  animation:neonRingSimple 2.8s ease-out infinite;
+  will-change:transform,opacity;
+}
+.wa-neon-ring:nth-child(1){width:108px;height:108px;transform:translate(-50%,-50%);animation-delay:0s;}
+.wa-neon-ring:nth-child(2){width:140px;height:140px;transform:translate(-50%,-50%);animation-delay:.9s;}
+@keyframes neonRingSimple{
+  0%{opacity:.5;transform:translate(-50%,-50%) scale(.9);}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1.3);}
+}
+
+.cta-neon-title{
+  font-family:'Syne',sans-serif;
+  font-size:clamp(1.9rem,4vw,3rem);
+  font-weight:800;letter-spacing:-.03em;
+  color:#fff;margin-bottom:1rem;
+}
+.cta-neon-sub{color:rgba(255,255,255,0.5);font-size:.97rem;max-width:440px;margin:0 auto 2.5rem;line-height:1.75;}
+
+.btn-wa-neon{
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  color:#fff;padding:1.1rem 2.8rem;border-radius:100px;
+  font-size:.88rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  box-shadow:0 4px 20px rgba(37,211,102,0.35);
+  transition:transform .3s,box-shadow .3s;
+  display:inline-flex;align-items:center;gap:.7rem;
+}
+.btn-wa-neon:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(37,211,102,0.5);}
+.cta-neon-meta{margin-top:1.5rem;font-size:.76rem;color:rgba(255,255,255,0.22);letter-spacing:.05em;}
+
+/* =============================================
+   FOOTER
+============================================= */
+footer{background:var(--dark);padding:4rem 5vw 2rem;color:rgba(255,255,255,.55);}
+.footer-top{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
+.footer-brand-name{font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;color:#fff;letter-spacing:-.02em;margin-top:.5rem;margin-bottom:.25rem;}
+.footer-brand-name span{color:var(--mg2);}
+.footer-tagline{font-size:.8rem;line-height:1.65;}
+.footer-col h5{font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mg2);font-weight:600;margin-bottom:1.1rem;}
+.footer-col a{display:block;font-size:.82rem;color:rgba(255,255,255,.48);margin-bottom:.6rem;transition:color .3s;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.8rem;display:flex;justify-content:space-between;align-items:center;font-size:.72rem;}
+.footer-social{display:flex;gap:.7rem;}
+.footer-social a{width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:.82rem;color:rgba(255,255,255,.48);transition:all .3s;}
+.footer-social a:hover{background:var(--mg);border-color:var(--mg);color:#fff;}
+
+.wa-float{position:fixed;bottom:26px;right:26px;z-index:400;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#25d366,#128c7e);display:flex;align-items:center;justify-content:center;font-size:1.55rem;color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.4);animation:ctaNeonFloat 3s ease-in-out infinite;transition:transform .3s;}
+.wa-float:hover{transform:scale(1.1) rotate(8deg);}
+
+/* REVEAL */
+.rev{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease;}
+.rev.on{opacity:1;transform:none;}
+
+/* =============================================
+   RESPONSIVE
+============================================= */
+@media(max-width:1100px){
+  .hero-layout{grid-template-columns:1fr 380px;}
+}
+@media(max-width:950px){
+  .hero-layout{grid-template-columns:1fr;}
+  .hero-visual-3d{display:none;}
+  .nl-inner{grid-template-columns:1fr;}
+  .nl-canvas-wrap{display:none;}
+  .split-viewport{overflow:hidden;padding:0 1.2rem;}
+  .split-grid{
+    display:flex;gap:1rem;
+    transition:transform .45s cubic-bezier(.4,0,.2,1);
+    cursor:grab;
+  }
+  .split-grid.dragging{cursor:grabbing;user-select:none;}
+  .split-card{flex:0 0 78vw;min-width:260px;max-width:340px;}
+  .split-dots{display:flex;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;}
+  .mobile-nav{display:block;}
+}
+@media(max-width:600px){
+  .hero{padding:2.5rem 1.5rem 10rem;}
+  .carousel-section{margin-top:-130px;}
+  .carousel-head{padding:150px 1.5rem 0;}
+  .ticker-img{width:28px;height:28px;}
+  .c-card{width:260px;}
+  .split-card{padding:1.8rem 1.4rem;flex:0 0 calc(92vw - 2rem);}
+  .cta-neon-card{padding:2.5rem 1.5rem;}
+  .footer-top{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:1rem;text-align:center;}
+}
+
+/* ===== SEARCH BTN NAV ===== */
+.nav-search-btn{background:none;border:none;cursor:pointer;padding:.45rem .5rem;border-radius:100px;transition:background .2s;color:var(--dark);display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation;flex-shrink:0;}
+.nav-search-btn:hover{background:rgba(91,33,182,0.08);}
+
+/* ===== SEARCH OVERLAY ===== */
+.search-overlay{position:fixed;inset:0;z-index:800;background:rgba(8,0,26,0.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);display:none;align-items:flex-start;justify-content:center;padding-top:14vh;opacity:0;transition:opacity .3s;}
+.search-overlay.open{display:flex;opacity:1;}
+.search-box{width:100%;max-width:640px;padding:0 1.5rem;}
+.search-inner{display:flex;align-items:center;gap:.8rem;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:100px;padding:.9rem 1.4rem;backdrop-filter:blur(20px);box-shadow:0 8px 40px rgba(91,33,182,0.25);}
+.search-icon-inner{font-size:1.1rem;flex-shrink:0;}
+.search-field{flex:1;background:none;border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:1rem;color:#fff;min-width:0;}
+.search-field::placeholder{color:rgba(255,255,255,0.35);}
+.search-close-btn{background:none;border:none;color:rgba(255,255,255,0.4);font-size:1rem;cursor:pointer;padding:.2rem .4rem;border-radius:6px;flex-shrink:0;transition:color .2s;}
+.search-close-btn:hover{color:#fff;}
+.search-results{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem;max-height:55vh;overflow-y:auto;}
+.search-result-item{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:.85rem 1.2rem;cursor:pointer;transition:all .25s;color:#fff;text-decoration:none;}
+.search-result-item:hover{background:rgba(232,0,90,0.1);border-color:rgba(232,0,90,0.3);}
+.search-result-icon{font-size:1.2rem;flex-shrink:0;}
+.search-result-name{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;}
+.search-result-cat{font-size:.75rem;color:rgba(255,255,255,0.4);margin-top:.15rem;}
+.search-no-results{text-align:center;color:rgba(255,255,255,0.35);font-size:.9rem;padding:2rem;}
+
+/* ===== CHATBOT ===== */
+.chat-float{position:fixed;bottom:26px;right:26px;z-index:400;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--mg),var(--vi2));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(232,0,90,0.35);transition:transform .3s,box-shadow .3s;animation:chatFloat 3.5s ease-in-out infinite;}
+.chat-float:hover{transform:scale(1.1);box-shadow:0 12px 36px rgba(232,0,90,0.5);}
+@keyframes chatFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+.chat-float-icon{font-size:1.5rem;line-height:1;}
+.chat-float-dot{position:absolute;top:10px;right:10px;width:10px;height:10px;background:#2DD4BF;border-radius:50%;border:2px solid var(--bg);animation:dotPulse 2s infinite;}
+@keyframes dotPulse{0%,100%{box-shadow:0 0 0 0 rgba(45,212,191,0.6);}70%{box-shadow:0 0 0 6px rgba(45,212,191,0);}}
+
+.chat-panel{position:fixed;bottom:96px;right:20px;z-index:600;width:340px;max-height:520px;background:rgba(248,247,255,0.92);backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,0.7);border-radius:24px;box-shadow:0 20px 60px rgba(91,33,182,0.18);display:flex;flex-direction:column;overflow:hidden;transform:scale(0.92) translateY(20px);transform-origin:bottom right;opacity:0;pointer-events:none;transition:all .35s cubic-bezier(.4,0,.2,1);}
+.chat-panel.open{opacity:1;pointer-events:all;transform:scale(1) translateY(0);}
+
+.chat-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem;background:linear-gradient(135deg,var(--vi),var(--vi2));border-radius:24px 24px 0 0;}
+.chat-agent{display:flex;align-items:center;gap:.75rem;}
+.chat-avatar{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.2);border:2px solid rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem;color:#fff;}
+.chat-agent-name{font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;color:#fff;}
+.chat-agent-status{display:flex;align-items:center;gap:.4rem;font-size:.7rem;color:rgba(255,255,255,0.75);}
+.chat-status-dot{width:6px;height:6px;border-radius:50%;background:#2DD4BF;animation:dotPulse 2s infinite;}
+.chat-close{background:none;border:none;color:rgba(255,255,255,0.7);font-size:1rem;cursor:pointer;padding:.3rem;border-radius:8px;transition:color .2s;}
+.chat-close:hover{color:#fff;}
+
+.chat-messages{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.75rem;min-height:200px;max-height:320px;}
+.chat-messages::-webkit-scrollbar{width:3px;}
+.chat-messages::-webkit-scrollbar-thumb{background:var(--vi2);border-radius:2px;}
+
+/* Burbuja Alberto */
+.chat-msg{display:flex;gap:.6rem;align-items:flex-end;}
+.chat-msg-avatar{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--vi),var(--vi2));display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:.65rem;font-weight:800;color:#fff;flex-shrink:0;}
+.chat-bubble{background:rgba(91,33,182,0.08);border:1px solid rgba(91,33,182,0.12);border-radius:16px 16px 16px 4px;padding:.65rem .9rem;max-width:240px;font-size:.82rem;line-height:1.55;color:var(--dark);}
+.chat-bubble b{color:var(--vi);font-weight:700;}
+.chat-bubble .chat-price-table{margin-top:.5rem;display:flex;flex-direction:column;gap:.25rem;}
+.chat-price-row{display:flex;justify-content:space-between;font-size:.78rem;padding:.2rem .4rem;border-radius:6px;background:rgba(91,33,182,0.05);}
+.chat-price-row:nth-child(even){background:rgba(91,33,182,0.09);}
+.chat-price-val{font-weight:700;color:var(--mg);font-family:'Syne',sans-serif;}
+
+/* Burbuja usuario */
+.chat-msg.user{flex-direction:row-reverse;}
+.chat-msg.user .chat-bubble{background:linear-gradient(135deg,var(--mg),var(--mg2));color:#fff;border:none;border-radius:16px 16px 4px 16px;}
+
+/* Typing indicator */
+.chat-typing{display:flex;gap:4px;align-items:center;padding:.5rem .7rem;}
+.chat-typing span{width:7px;height:7px;border-radius:50%;background:var(--vi2);opacity:.5;animation:typingDot .8s ease-in-out infinite;}
+.chat-typing span:nth-child(2){animation-delay:.15s;}
+.chat-typing span:nth-child(3){animation-delay:.3s;}
+@keyframes typingDot{0%,80%,100%{transform:scale(0.7);opacity:.4;}40%{transform:scale(1);opacity:1;}}
+
+/* Botones opciones chatbot */
+.chat-options{display:flex;flex-direction:column;gap:.4rem;margin-top:.5rem;}
+.chat-opt-btn{background:rgba(255,255,255,0.85);border:1px solid rgba(91,33,182,0.18);border-radius:100px;padding:.48rem 1rem;font-size:.78rem;color:var(--dark);cursor:pointer;text-align:left;transition:all .25s;font-family:'DM Sans',sans-serif;}
+.chat-opt-btn:hover{background:linear-gradient(135deg,var(--mg),var(--mg2));color:#fff;border-color:transparent;}
+
+/* Links dentro del chat */
+.chat-link-btn{display:inline-flex;align-items:center;gap:.4rem;margin-top:.5rem;background:rgba(91,33,182,0.08);border:1px solid rgba(91,33,182,0.2);border-radius:100px;padding:.4rem .9rem;font-size:.75rem;color:var(--vi);text-decoration:none;transition:all .25s;}
+.chat-link-btn:hover{background:var(--vi);color:#fff;}
+.chat-wsp-btn{display:inline-flex;align-items:center;gap:.4rem;margin-top:.4rem;background:#25d366;border:none;border-radius:100px;padding:.4rem .9rem;font-size:.75rem;color:#fff;text-decoration:none;font-weight:600;transition:all .25s;}
+.chat-wsp-btn:hover{background:#128c7e;}
+
+/* Input row */
+.chat-input-row{display:flex;gap:.5rem;padding:.75rem 1rem;border-top:1px solid rgba(91,33,182,0.1);background:rgba(248,247,255,0.6);}
+.chat-input{flex:1;background:rgba(255,255,255,0.8);border:1px solid rgba(91,33,182,0.15);border-radius:100px;padding:.5rem 1rem;font-size:.82rem;font-family:'DM Sans',sans-serif;outline:none;color:var(--dark);transition:border-color .2s;}
+.chat-input:focus{border-color:var(--vi2);}
+.chat-send{background:linear-gradient(135deg,var(--mg),var(--mg2));border:none;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;color:#fff;cursor:pointer;font-size:.9rem;flex-shrink:0;transition:transform .2s,box-shadow .2s;}
+.chat-send:hover{transform:scale(1.1);box-shadow:0 4px 16px var(--mg-glow);}
+
+@media(max-width:400px){.chat-panel{width:calc(100vw - 24px);right:12px;}}
+
+</style>
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="menu menu1 cid-swFLFoN3nn" once="menu" id="menu1-3">
-    
 
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo-trazo-web-124x103.png" alt="Agencia Trazo" style="height: 3rem;">
-                    </a>
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-danger text-primary display-7" href="index.html">agenciatrazo.cl</a></span>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-danger display-4" href="index.html">inicio</a></li>
-                    <li class="nav-item"><a class="nav-link link text-danger display-4" href="index.html#content17-w">
-                            Servicios</a></li><li class="nav-item"><a class="nav-link link text-danger display-4" href="portafolio.html#slider2-i">Portafolio</a></li>
-                    <li class="nav-item"><a class="nav-link link text-danger display-4" href="planes.html#content4-1h">Packs Logo</a>
-                    </li><li class="nav-item dropdown"><a class="nav-link link text-danger dropdown-toggle display-4" href="talonarios.html#content4-40" aria-expanded="false" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside">Talonarios</a><div class="dropdown-menu" aria-labelledby="dropdown-229"><a class="text-danger dropdown-item text-primary display-4" href="formularios.html">Talonarios</a><a class="text-danger dropdown-item text-primary display-4" href="recetarios.html">Recetarios</a><a class="text-danger dropdown-item text-primary display-4" href="talonarios-rifa-bingo-tickets.html">Bingos/Rifas</a></div></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-danger display-4" href="page14.html" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Productos</a><div class="dropdown-menu" aria-labelledby="dropdown-480"><a class="text-danger show dropdown-item text-primary display-4" href="productos.html"><span class="mobi-mbri mobi-mbri-image-gallery mbr-iconfont mbr-iconfont-btn"></span>Productos</a><a class="dropdown-item text-danger text-primary show display-4" href="tarjetas-polimate.html#tabs1-6c" aria-expanded="false">tarjetas&nbsp;polimate</a><a class="dropdown-item text-danger text-primary show display-4" href="tarjetas-sectorizadas.html">Tarjetas Brillo Sectorizado</a><a class="dropdown-item text-danger text-primary display-4" href="productos.html">Flyers</a><a class="dropdown-item text-danger text-primary display-4" href="productos.html">Stickers DTF UV</a><a class="dropdown-item text-danger text-primary display-4" href="productos.html">Stickers Mt2</a><a class="dropdown-item text-danger text-primary display-4" href="productos.html">Pendon Roller</a><a class="dropdown-item text-danger text-primary display-4" href="regalos_corporativos.html" aria-expanded="false"><span class="mobi-mbri mobi-mbri-gift mbr-iconfont mbr-iconfont-btn"></span>Regalos corporativos</a><a class="dropdown-item text-danger text-primary display-4" href="productos.html">Prints<br></a><a class="dropdown-item text-danger text-primary display-4" href="productos.html">Dípticos<br></a><a class="dropdown-item text-danger text-primary display-4" href="productos.html">Mini pendón<br></a></div></li><li class="nav-item"><a class="nav-link link text-danger display-4" href="index.html#form5-c">Contacto</a></li></ul>
-                <div class="icons-menu">
-                    <a class="iconfont-wrapper" href="https://www.instagram.com/imprenta_trazo.cl/" target="_blank">
-                        <span class="p-2 mbr-iconfont socicon-instagram socicon" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255); font-size: 27px;"></span>
-                    </a>
-                    
-                    
-                    
-                </div>
-                
-            </div>
+<div id="ambient" aria-hidden="true">
+  <div class="amb amb-1"></div>
+  <div class="amb amb-2"></div>
+  <div class="amb amb-3"></div>
+</div>
+<div id="grain" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo-trazo-web-124x103.png" alt="Agencia Trazo">
+    <span class="nav-logo-txt">agenciatrazo<span>.cl</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="portafolio.html#slider2-i">Portafolio</a></li>
+    <li><a href="planes.html#content4-1h">Packs Logo</a></li>
+    <li class="nav-drop">
+      <a href="talonarios.html">Talonarios</a>
+      <div class="drop-menu">
+        <a href="formularios.html">Talonarios</a>
+        <a href="recetarios.html">Recetarios</a>
+        <a href="talonarios-rifa-bingo-tickets.html">Bingos / Rifas</a>
+      </div>
+    </li>
+    <li class="nav-drop">
+      <a href="productos.html">Productos</a>
+      <div class="drop-menu">
+        <a href="productos.html">Ver todos los productos</a>
+        <a href="tarjetas-polimate.html#tabs1-6c">Tarjetas Polimate</a>
+        <a href="tarjetas-sectorizadas.html">Brillo Sectorizado</a>
+        <a href="productos.html">Flyers</a>
+        <a href="productos.html">Stickers DTF UV</a>
+        <a href="productos.html">Stickers Mt2</a>
+        <a href="productos.html">Pendón Roller</a>
+        <a href="regalos_corporativos.html">Regalos Corporativos</a>
+        <a href="productos.html">Prints · Dípticos · Mini Pendón</a>
+      </div>
+    </li>
+    <li><a href="naminglab.html">NamingLab ✦</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="https://www.instagram.com/imprenta_trazo.cl/" target="_blank" class="nav-ig"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  <a href="https://wa.me/56998105491?text=Hola%20Agencia%20Trazo!%20quiero%20cotizar" class="nav-cta" target="_blank">Cotizar →</a>
+  <button class="nav-search-btn" id="searchBtn" aria-label="Buscar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+  <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- Panel móvil -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li class="mob-item"><a href="index.html" class="mob-link plain" onclick="closeMobile()">Inicio</a></li>
+    <li class="mob-item"><a href="#servicios" class="mob-link plain" onclick="closeMobile()">Servicios</a></li>
+    <li class="mob-item"><a href="portafolio.html" class="mob-link plain" onclick="closeMobile()">Portafolio</a></li>
+    <li class="mob-item"><a href="planes.html" class="mob-link plain" onclick="closeMobile()">Packs Logo</a></li>
+    <li class="mob-item">
+      <div class="mob-link" onclick="toggleSub('sub-tal',this)"><span>Talonarios</span><span class="mob-arrow">▾</span></div>
+      <div class="mob-sub" id="sub-tal">
+        <a href="formularios.html" onclick="closeMobile()">Talonarios</a>
+        <a href="recetarios.html" onclick="closeMobile()">Recetarios</a>
+        <a href="talonarios-rifa-bingo-tickets.html" onclick="closeMobile()">Bingos / Rifas</a>
+      </div>
+    </li>
+    <li class="mob-item">
+      <div class="mob-link" onclick="toggleSub('sub-prod',this)"><span>Productos</span><span class="mob-arrow">▾</span></div>
+      <div class="mob-sub" id="sub-prod">
+        <a href="tarjetas-polimate.html" onclick="closeMobile()">Tarjetas Polimate</a>
+        <a href="tarjetas-sectorizadas.html" onclick="closeMobile()">Brillo Sectorizado</a>
+        <a href="productos.html" onclick="closeMobile()">Flyers · Stickers · Pendón</a>
+        <a href="regalos_corporativos.html" onclick="closeMobile()">Regalos Corporativos</a>
+      </div>
+    </li>
+    <li class="mob-item"><a href="naminglab.html" class="mob-link plain" onclick="closeMobile()">NamingLab ✦</a></li>
+    <li class="mob-item"><a href="#contacto" class="mob-link plain" onclick="closeMobile()">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/56998105491?text=Hola%20Agencia%20Trazo!%20quiero%20cotizar" class="mob-cta" target="_blank">Cotizar →</a>
+</div>
+
+<!-- ===== TICKER ===== -->
+<div class="prod-ticker z">
+  <div class="ticker-track">
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/notepad-presentation-mockup-vol4-443x443.png" alt=""><strong>Talonarios</strong><span class="ticker-price">desde $11.600</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/whatsapp-image-2026-01-06-at-17.22.56-1-783x571.jpeg" alt=""><strong>Bingos &amp; Rifas</strong><span class="ticker-price">desde $14.500</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/whatsapp-image-2024-12-04-at-17.01.40-600x1066.jpeg" alt=""><strong>Brillo Sectorizado</strong><span class="ticker-price">$77.900 x1.000</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/mock-up-flyer-600x400.png" alt=""><strong>Flyers</strong><span class="ticker-price">desde $34.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/gemini-generated-image-a48heoa48heoa48h-2-1024x1024.png" alt=""><strong>Tarjetas Polimate</strong><span class="ticker-price">desde $35.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/roll-up-mockup-100200-cm-607d6d570a2bd-900x.webp" alt=""><strong>Pendón Roller</strong><span class="ticker-price">$65.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/whatsapp-image-2025-11-05-at-18.47.04-325x722.jpg" alt=""><strong>Stickers DTF UV</strong><span class="ticker-price">desde $14.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/mbr-5-1920x1277.jpeg" alt=""><strong>Diseño de Logo</strong><span class="ticker-price">desde $45.900</span></div>
+    <!-- loop -->
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/notepad-presentation-mockup-vol4-443x443.png" alt=""><strong>Talonarios</strong><span class="ticker-price">desde $11.600</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/whatsapp-image-2026-01-06-at-17.22.56-1-783x571.jpeg" alt=""><strong>Bingos &amp; Rifas</strong><span class="ticker-price">desde $14.500</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/whatsapp-image-2024-12-04-at-17.01.40-600x1066.jpeg" alt=""><strong>Brillo Sectorizado</strong><span class="ticker-price">$77.900 x1.000</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/mock-up-flyer-600x400.png" alt=""><strong>Flyers</strong><span class="ticker-price">desde $34.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/gemini-generated-image-a48heoa48heoa48h-2-1024x1024.png" alt=""><strong>Tarjetas Polimate</strong><span class="ticker-price">desde $35.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/roll-up-mockup-100200-cm-607d6d570a2bd-900x.webp" alt=""><strong>Pendón Roller</strong><span class="ticker-price">$65.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/whatsapp-image-2025-11-05-at-18.47.04-325x722.jpg" alt=""><strong>Stickers DTF UV</strong><span class="ticker-price">desde $14.900</span></div>
+    <div class="ticker-item"><img class="ticker-img" src="assets/images/mbr-5-1920x1277.jpeg" alt=""><strong>Diseño de Logo</strong><span class="ticker-price">desde $45.900</span></div>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero z">
+  <div class="hero-fade"></div>
+  <div class="hero-layout">
+    <div>
+      <div class="hero-badge"><div class="bdot"></div>Imprenta · Diseño · Branding · Santiago, Chile</div>
+      <h1 class="hero-title">Creamos lo que<br>tu marca</h1>
+      <div class="tw-wrap"><span id="tw-text">necesita<span class="tw-cur"></span></span></div>
+      <p class="hero-sub">Agencia de diseño gráfico e imprenta en Santiago. Talonarios 100% personalizados, branding desde cero y papelería corporativa. Diseño y producción bajo un mismo techo.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/56998105491?text=Hola%20Agencia%20Trazo!%20quiero%20cotizar" class="btn btn-mg" target="_blank"><i class="fab fa-whatsapp"></i> Cotizar ahora</a>
+        <a href="talonarios.html" class="btn btn-outline-dark">Ver talonarios →</a>
+      </div>
+    </div>
+    <!-- Hero visual -->
+    <div class="hero-visual-3d" id="heroVisual">
+
+      <div class="hv-stack">
+        <!-- Card 1: Talonarios -->
+        <div class="hv-card" data-pos="0">
+          <div class="hv-main-img">
+            <img src="assets/images/notepad-presentation-mockup-vol4-443x443.png" alt="Talonarios">
+          </div>
+          <div class="hv-tag">⭐ Más vendido</div>
+          <div class="hv-prod-name">Talonarios personalizados</div>
+          <div class="hv-price-lbl">Desde</div>
+          <div class="hv-prod-price">$11.600 IVA incl.</div>
         </div>
-    </nav>
+
+        <!-- Card 2: Flyers -->
+        <div class="hv-card" data-pos="1">
+          <div class="hv-main-img">
+            <img src="assets/images/mock-up-flyer-600x400.png" alt="Flyers">
+          </div>
+          <div class="hv-tag">🖨️ Impresión</div>
+          <div class="hv-prod-name">Flyers personalizados</div>
+          <div class="hv-price-lbl">Desde</div>
+          <div class="hv-prod-price">$34.900 IVA incl.</div>
+        </div>
+
+        <!-- Card 3: Bingos -->
+        <div class="hv-card" data-pos="2">
+          <div class="hv-main-img">
+            <img src="assets/images/whatsapp-image-2026-01-06-at-17.22.56-1-783x571.jpeg" alt="Bingos y Rifas">
+          </div>
+          <div class="hv-tag">🎟️ Eventos</div>
+          <div class="hv-prod-name">Bingos &amp; Rifas</div>
+          <div class="hv-price-lbl">Desde</div>
+          <div class="hv-prod-price">$14.500 IVA incl.</div>
+        </div>
+      </div>
+
+      <!-- Badges flotantes -->
+      <div class="hv-badge hv-b1"><strong>+10 años</strong><span>de experiencia</span></div>
+      <div class="hv-badge hv-b2"><strong>🚚 Todo Chile</strong><span>despacho a regiones</span></div>
+      <div class="hv-badge hv-b3"><strong>100%</strong><span>personalizado</span></div>
+    </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="slider6 mbr-embla cid-tKFSrIl01z" id="slider6-51">
-    
-    
-    <div class="position-relative">
-        <div class="mbr-section-head">
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-5"><strong>Productos destacados</strong><br><strong>Impresión</strong></h4>
-            
-        </div>
-        <div class="embla mt-4" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play="true" data-auto-play-interval="6" data-draggable="true">
-            <div class="embla__viewport container-fluid">
-                <div class="embla__container">
-                    <div class="embla__slide slider-image item active" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    
-                                <a href="talonarios.html" target="false"></a><a href="talonarios.html"><img src="assets/images/notepad-presentation-mockup-vol4-443x443.png" alt="Mobirise Website Builder" title="" data-slide-to="0" data-bs-slide-to="0"></a></div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Talonarios</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7">Comprobantes - Recetarios órdenes&nbsp;- Report...</p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="talonarios.html" class="btn item-btn btn-primary-outline display-7">Ver Precios &gt;</a></div>
-                        </div>
-                    </div><div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    
-                                <a href="talonarios-rifa-bingo-tickets.html" target="false"></a><a href="talonarios-rifa-bingo-tickets.html"><img src="assets/images/whatsapp-image-2026-01-06-at-17.22.56-1-783x571.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="1" data-bs-slide-to="2"></a></div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><p><strong>Talonarios Bingo / Rifa</strong></p></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7">Desde<strong> $14.500</strong> IVA incl.</p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="talonarios-rifa-bingo-tickets.html" class="btn item-btn btn-primary-outline display-7">Ver Más &gt;</a></div>
-                        </div>
-                    </div><div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    
-                                <a href="page20.html" target="false"></a><a href="tarjetas-sectorizadas.html"><img src="assets/images/whatsapp-image-2024-12-04-at-17.01.40-600x1066.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="1"></a></div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Tarjetas Brillo Sectorizado</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7"><strong>$77.900 </strong>IVA incl.</p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="tarjetas-sectorizadas.html" class="btn item-btn btn-primary-outline display-7">Comprar &gt;</a></div>
-                        </div>
-                    </div><div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    <img src="assets/images/mock-up-flyer-600x400.png" alt="Mobirise Website Builder" title="" data-slide-to="3" data-bs-slide-to="3">
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Flyers</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7"><strong>$34.900&nbsp;</strong>IVA incl.</p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="https://wa.link/oxc1ku" class="btn item-btn btn-primary-outline display-7" target="_blank">Comprar &gt;</a></div>
-                        </div>
-                    </div>
-                    <div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    
-                                <a href="page19.html" target="false"></a><a href="tarjetas-polimate.html" target="false"></a><a href="tarjetas-polimate.html"><img src="assets/images/gemini-generated-image-a48heoa48heoa48h-2-1024x1024.png" alt="Mobirise Website Builder" title="" data-slide-to="4" data-bs-slide-to="4"></a></div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Tarjetas Polimate</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7"><strong>$35.900 - $46.500&nbsp;</strong>IVA incl.<br>
-                                </p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="tarjetas-polimate.html#tabs1-6c" class="btn item-btn btn-primary-outline display-7">Comprar &gt;</a></div>
-                        </div>
-                    </div><div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    <img src="assets/images/roll-up-mockup-100200-cm-607d6d570a2bd-900x.webp" alt="Mobirise Website Builder" title="" data-slide-to="5" data-bs-slide-to="5">
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Pendón Roller 80x200cm.</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7">Incluye estructura de<br> aluminio + bolso<br><strong>$65.900&nbsp;</strong>IVA incl.</p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="https://wa.link/oxc1ku" class="btn item-btn btn-primary-outline display-7" target="_blank">Comprar &gt;</a></div>
-                        </div>
-                    </div><div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    <img src="assets/images/whatsapp-image-2025-11-05-at-18.47.04-325x722.jpg" alt="Mobirise Website Builder" title="" data-slide-to="6" data-bs-slide-to="6">
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>STICKERS DTF UV</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7"><strong>$14.900 - $57.900&nbsp;</strong>IVA incl.</p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="https://wa.link/oxc1ku" class="btn item-btn btn-primary-outline display-7" target="_blank">Comprar &gt;</a></div>
-                        </div>
-                    </div><div class="embla__slide slider-image item" style="margin-left: 0rem; margin-right: 0rem;">
-                        <div class="slide-content">
-                            <div class="item-wrapper">
-                                <div class="item-img">
-                                    
-                                <a href="planes.html#content4-1h"><img src="assets/images/mbr-5-1920x1277.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="7" data-bs-slide-to="8"></a></div>
-                            </div>
-                            <div class="item-content">
-                                
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Diseño de Logo</strong></h6>
-                                <p class="mbr-text mbr-fonts-style mt-3 display-7">Desde Plan básico al más Pro<br><strong>$45.900 - $89.900&nbsp;</strong>IVA incl.</p>
-                            </div>
-                            <div class="mbr-section-btn item-footer mt-2"><a href="planes.html#content4-1h" class="btn item-btn btn-primary-outline display-7">Comprar &gt;</a></div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            <button class="embla__button embla__button--prev">
-                <span class="mobi-mbri mobi-mbri-arrow-prev mbr-iconfont" aria-hidden="true"></span>
-                <span class="sr-only visually-hidden visually-hidden">Previous</span>
-            </button>
-            <button class="embla__button embla__button--next">
-                <span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont" aria-hidden="true"></span>
-                <span class="sr-only visually-hidden visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
+<!-- ===== CAROUSEL PRODUCTOS ===== -->
+<section class="carousel-section z" id="productos">
+  <div class="carousel-head rev">
+    <div class="label-tag" style="justify-content:center;">Catálogo</div>
+    <h2>Productos destacados <span>Impresión</span></h2>
+  </div>
+  <div class="carousel-stage" id="carouselStage">
+    <!-- Las cards se generan por JS para facilitar el loop infinito -->
+  </div>
+  <div class="carousel-controls rev">
+    <button class="sl-btn" id="cPrev">‹</button>
+    <div class="sl-dots" id="cDots"></div>
+    <button class="sl-btn" id="cNext">›</button>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="header6 cid-swFLbOim4R mbr-parallax-background" id="header6-1">
-
-    
-
-    <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(26, 14, 110);"></div>
-
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong>Podemos crear todo para que empieces HOY a vender como un grande</strong></h1>
-                
-                <p class="mbr-text mbr-white mbr-fonts-style display-7"> imprimimos de TODO - Creamos tu imagen corporativa - RRSS y más</p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-warning-outline display-4" href="planes.html">Packs Logo</a> <a class="btn btn-danger display-4" href="talonarios.html">Talonarios</a></div>
-            </div>
-        </div>
+<!-- ===== SPLIT CARDS ===== -->
+<section class="split-section z" id="servicios">
+  <div class="container">
+    <div class="section-head rev">
+      <div class="label-tag" style="justify-content:center;">Lo que hacemos</div>
+      <h2 class="h2">Diseño y producción<br><em>bajo un mismo techo</em></h2>
+      <p style="color:var(--muted);max-width:500px;margin:0 auto;font-size:.92rem;">Podemos crear todo lo que tu negocio necesita para empezar a vender hoy como un grande.</p>
     </div>
+    <div class="split-viewport">
+      <div class="split-grid" id="splitGrid">
+
+        <div class="split-card mg rev">
+          <div class="split-icon mg">🎨</div>
+          <div class="split-sub mg">Diseño &amp; Branding</div>
+          <h3>Marcas únicas<br>que no se olvidan</h3>
+          <p>Tu imagen debe ser única. El logo es la primera impresión que tienen los clientes de ti — muéstrate como el profesional que eres.</p>
+          <div class="split-accordion">
+            <div class="split-acc-toggle" onclick="toggleAcc(this)">
+              <span>Ver detalles</span><span class="acc-icon">▾</span>
+            </div>
+            <div class="split-acc-body">
+              <ul class="split-list">
+                <li>Logo e identidad visual completa</li>
+                <li>Manual de marca y aplicaciones</li>
+                <li>Diseño para redes sociales y web</li>
+                <li>Carátulas para artistas musicales</li>
+                <li>Banners, Discord y material digital</li>
+                <li>Asesoramiento visual para emprendedores</li>
+              </ul>
+            </div>
+          </div>
+          <div class="split-actions">
+            <a href="planes.html" class="btn btn-mg">Ver Packs Logo →</a>
+          </div>
+        </div>
+
+        <div class="split-card vi rev" style="transition-delay:.1s">
+          <div class="split-icon vi">🖨️</div>
+          <div class="split-sub vi">Imprenta &amp; Papelería</div>
+          <h3>Talonarios 100%<br>personalizados</h3>
+          <p>La papelería corporativa funcional organiza tu negocio y mantiene contacto con tus clientes. Diseño, prepicado y encuadernación incluidos.</p>
+          <div class="split-accordion">
+            <div class="split-acc-toggle" onclick="toggleAcc(this)">
+              <span>Ver detalles</span><span class="acc-icon">▾</span>
+            </div>
+            <div class="split-acc-body">
+              <ul class="split-list">
+                <li>Talonarios para cualquier rubro</li>
+                <li>Recetarios médicos, dentales, veterinarios</li>
+                <li>Tickets de bingo, rifas y eventos</li>
+                <li>Tarjetas, flyers y pendones</li>
+                <li>Stickers troquelados y DTF UV</li>
+                <li>Dípticos, trípticos y brochures</li>
+              </ul>
+            </div>
+          </div>
+          <div class="split-actions">
+            <a href="talonarios.html" class="btn btn-vi">Ver Talonarios →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- dots solo en móvil -->
+    <div class="split-dots" id="splitDots">
+      <div class="split-dot active" onclick="splitGoTo(0)"></div>
+      <div class="split-dot" onclick="splitGoTo(1)"></div>
+    </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="content17 cid-sxP5sf1x7N" id="content17-w">
-
-    
-
-    
-    
-    <div class="container">
-        
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                    <div class="section-head align-center mb-4">
-                        <h3 class="mbr-section-title mb-0 mbr-fonts-style display-5"><strong>Ofrecemos los productos y servicios que tu negocio necesita</strong></h3>
-                        
-                    </div>
-                    
-                    <div id="bootstrap-toggle" class="toggle-panel accordionStyles tab-content">
-                        <div class="card mb-3">
-                            <div class="card-header" role="tab" id="headingOne">
-                                <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_11" aria-expanded="false" aria-controls="collapse1">
-                                    <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>✅ Podemos crear todo para que empieces HOY a vender como un grande: ➡</strong></h6>
-                                    <span class="sign mbr-iconfont mbri-arrow-down"></span>
-                                </a>
-                            </div>
-                            <div id="collapse1_11" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    <p class="mbr-fonts-style panel-text display-7">✔ Una impactante e inolvidable imagen corporativa<br><br>✔ Un talonario corporativo para que organices tus ventas o cualquier gestión interna<br><br>✔ Tarjeta digital o tarjeta física de presentación<br><br>✔ Material gráfico (letreros, pendones, carpetas, flyers, dípticos, etc.)<br><br>✔ Asesoramiento de identidad visual para emprendedores y empresa.<br><br>Te asesoramos en este hermoso y desafiante camino del emprendimiento.<br><br>
-Sabemos lo que es emprender y competir con grandes marcas.<br><br><strong><em>¡CUÉNTANOS TUS IDEAS Y DEJA TODO EN NUESTRAS MANOS!</em></strong><br></p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                    </div>
-                </div>
-            </div>
+<!-- ===== NAMINGLAB ===== -->
+<section class="nl-section z">
+  <div class="container">
+    <div class="nl-inner">
+      <div class="rev">
+        <div class="nl-eyebrow">✦ Herramienta gratuita de IA</div>
+        <h2 class="nl-title">Trazo <span class="nl-em">NamingLab</span></h2>
+        <p class="nl-desc">¿Estás creando tu negocio y no sabes cómo llamarlo? Nuestra herramienta de naming con IA genera 10 nombres memorables con análisis de arquetipo, psicología del color y verificación en redes — todo en menos de 60 segundos.</p>
+        <div class="nl-features">
+          <div class="nl-feat"><div class="nl-feat-dot"></div>Genera nombres en español, inglés o spanglish</div>
+          <div class="nl-feat"><div class="nl-feat-dot"></div>Verifica disponibilidad en Instagram, Facebook y TikTok</div>
+          <div class="nl-feat"><div class="nl-feat-dot"></div>Orientación para registro en INAPI y NIC.cl</div>
+          <div class="nl-feat"><div class="nl-feat-dot"></div>Slogans en 4 categorías de comunicación</div>
+          <div class="nl-feat"><div class="nl-feat-dot"></div>Brief/concepto de marca y storytellling</div>
         </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="naminglab.html" class="btn btn-vi">Probar NamingLab gratis →</a>
+          <a href="https://wa.me/56998105491?text=Usé%20el%20NamingLab%20y%20quiero%20cotizar%20mi%20diseño" class="btn btn-ghost" target="_blank">Quiero el diseño completo</a>
+        </div>
+      </div>
+      <!-- NamingLab Visual — teléfono isométrico SVG -->
+      <div class="nl-canvas-wrap rev" style="transition-delay:.15s;background:transparent;" id="nlVisual">
+        <svg viewBox="0 0 380 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+          <defs>
+            <linearGradient id="isoFace" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#3D1B8C"/><stop offset="100%" stop-color="#1A0A4A"/>
+            </linearGradient>
+            <linearGradient id="isoSide" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1E0860"/><stop offset="100%" stop-color="#0A0430"/>
+            </linearGradient>
+            <linearGradient id="isoTop" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4A22A0"/><stop offset="100%" stop-color="#2A1260"/>
+            </linearGradient>
+            <linearGradient id="isoScr" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#180850" stop-opacity="0.98"/>
+              <stop offset="100%" stop-color="#0C0430" stop-opacity="0.98"/>
+            </linearGradient>
+            <filter id="ig"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="isg"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="iof"><feGaussianBlur stdDeviation="9"/></filter>
+            <clipPath id="isc"><polygon points="108,98 202,132 202,320 108,286"/></clipPath>
+          </defs>
+
+          <!-- Orbe cyan -->
+          <circle cx="52" cy="152" r="30" fill="#00D4C8" filter="url(#iof)" opacity="0.65">
+            <animate attributeName="r" values="28;34;28" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="52" cy="152" r="15" fill="#00FFE8" opacity="0.9"/>
+          <circle cx="46" cy="145" r="5" fill="white" opacity="0.5"/>
+
+          <!-- Línea curva conectora -->
+          <path d="M 68 152 Q 148 152 172 198 Q 196 244 272 218"
+                stroke="#00D4C8" stroke-width="1.5" fill="none" opacity="0.6" filter="url(#ig)"/>
+
+          <!-- Sombra base -->
+          <ellipse cx="155" cy="358" rx="76" ry="12" fill="#4422AA" opacity="0.18"/>
+
+          <!-- CARA TOP -->
+          <polygon points="100,80 210,118 236,103 126,65" fill="url(#isoTop)"/>
+          <polygon points="100,80 210,118 236,103 126,65" fill="none" stroke="#9B7AFF" stroke-width="0.8" opacity="0.45"/>
+          <line x1="126" y1="65" x2="236" y2="103" stroke="#00D4C8" stroke-width="0.8" opacity="0.3" filter="url(#ig)"/>
+
+          <!-- CARA LATERAL DERECHA -->
+          <polygon points="210,118 236,103 236,323 210,338" fill="url(#isoSide)"/>
+          <line x1="236" y1="103" x2="236" y2="323" stroke="#00D4C8" stroke-width="0.8" opacity="0.28" filter="url(#ig)"/>
+
+          <!-- CARA FRONTAL -->
+          <polygon points="100,80 210,118 210,338 100,300" fill="url(#isoFace)"/>
+          <polygon points="100,80 210,118 210,338 100,300" fill="none" stroke="#9B7AFF" stroke-width="1.2" opacity="0.55" filter="url(#ig)"/>
+          <line x1="100" y1="80" x2="100" y2="300" stroke="#00D4C8" stroke-width="1.2" opacity="0.45" filter="url(#ig)"/>
+
+          <!-- PANTALLA -->
+          <polygon points="108,98 202,132 202,320 108,286" fill="url(#isoScr)"/>
+
+          <!-- Contenido pantalla (transformado al plano isométrico) -->
+          <!-- matrix(1, 0.362, 0, 1, 108, 98) mapea espacio 94×222 al paralelogramo -->
+          <g transform="matrix(1, 0.362, 0, 1, 108, 98)" clip-path="url(#isc)">
+            <!-- Header -->
+            <rect x="4" y="5" width="86" height="18" rx="4" fill="#2D1478" opacity="0.85"/>
+            <circle cx="12" cy="14" r="4" fill="#2DD4BF" opacity="0.6"/>
+            <rect x="20" y="11" width="52" height="4" rx="2" fill="#9B7AFF" opacity="0.5"/>
+            <!-- Grid de puntos -->
+            <g fill="#2DD4BF" opacity="0.32">
+              <circle cx="8" cy="34" r="1.2"/><circle cx="17" cy="34" r="1.2"/><circle cx="26" cy="34" r="1.2"/><circle cx="35" cy="34" r="1.2"/><circle cx="44" cy="34" r="1.2"/><circle cx="53" cy="34" r="1.2"/><circle cx="62" cy="34" r="1.2"/><circle cx="71" cy="34" r="1.2"/><circle cx="80" cy="34" r="1.2"/><circle cx="89" cy="34" r="1.2"/>
+              <circle cx="8" cy="43" r="1.2"/><circle cx="17" cy="43" r="1.2"/><circle cx="26" cy="43" r="1.2"/><circle cx="35" cy="43" r="1.2"/><circle cx="44" cy="43" r="1.2"/><circle cx="53" cy="43" r="1.2"/><circle cx="62" cy="43" r="1.2"/><circle cx="71" cy="43" r="1.2"/><circle cx="80" cy="43" r="1.2"/><circle cx="89" cy="43" r="1.2"/>
+              <circle cx="8" cy="52" r="1.2"/><circle cx="17" cy="52" r="1.2"/><circle cx="26" cy="52" r="1.2"/><circle cx="35" cy="52" r="1.2"/><circle cx="44" cy="52" r="1.2"/><circle cx="53" cy="52" r="1.2"/><circle cx="62" cy="52" r="1.2"/><circle cx="71" cy="52" r="1.2"/><circle cx="80" cy="52" r="1.2"/><circle cx="89" cy="52" r="1.2"/>
+              <circle cx="8" cy="61" r="1.2"/><circle cx="17" cy="61" r="1.2"/><circle cx="26" cy="61" r="1.2"/><circle cx="35" cy="61" r="1.2"/><circle cx="44" cy="61" r="1.2"/><circle cx="53" cy="61" r="1.2"/><circle cx="62" cy="61" r="1.2"/><circle cx="71" cy="61" r="1.2"/><circle cx="80" cy="61" r="1.2"/><circle cx="89" cy="61" r="1.2"/>
+              <circle cx="8" cy="70" r="1.2"/><circle cx="17" cy="70" r="1.2"/><circle cx="26" cy="70" r="1.2"/><circle cx="35" cy="70" r="1.2"/><circle cx="44" cy="70" r="1.2"/><circle cx="53" cy="70" r="1.2"/><circle cx="62" cy="70" r="1.2"/><circle cx="71" cy="70" r="1.2"/><circle cx="80" cy="70" r="1.2"/><circle cx="89" cy="70" r="1.2"/>
+            </g>
+            <!-- Barra progreso -->
+            <rect x="4" y="82" width="86" height="5" rx="2.5" fill="#1A0A4A" opacity="0.8"/>
+            <rect x="4" y="82" width="55" height="5" rx="2.5" fill="#2DD4BF" opacity="0.7">
+              <animate attributeName="width" values="20;72;20" dur="3s" repeatCount="indefinite"/>
+            </rect>
+            <!-- Resultados naming -->
+            <rect x="4" y="93" width="86" height="10" rx="3" fill="#2DD4BF" opacity="0.1" stroke="#2DD4BF" stroke-width="0.5"/>
+            <circle cx="11" cy="98" r="2.5" fill="#2DD4BF" opacity="0.6"/>
+            <rect x="17" y="95" width="55" height="3" rx="1.5" fill="#2DD4BF" opacity="0.5"/>
+            <rect x="4" y="108" width="86" height="10" rx="3" fill="#9B7AFF" opacity="0.07" stroke="#9B7AFF" stroke-width="0.5"/>
+            <circle cx="11" cy="113" r="2.5" fill="#A78BFA" opacity="0.5"/>
+            <rect x="17" y="110" width="42" height="3" rx="1.5" fill="#9B7AFF" opacity="0.4"/>
+            <rect x="4" y="123" width="86" height="10" rx="3" fill="#FF88CC" opacity="0.06" stroke="#FF88CC" stroke-width="0.4"/>
+            <circle cx="11" cy="128" r="2.5" fill="#FF88CC" opacity="0.4"/>
+            <rect x="17" y="125" width="36" height="3" rx="1.5" fill="#FF88CC" opacity="0.3"/>
+            <!-- Paleta -->
+            <circle cx="10" cy="148" r="4.5" fill="#E8005A"/>
+            <circle cx="23" cy="148" r="4.5" fill="#7C3AED"/>
+            <circle cx="36" cy="148" r="4.5" fill="#2DD4BF"/>
+            <circle cx="49" cy="148" r="4.5" fill="#F0EEFF"/>
+            <circle cx="62" cy="148" r="4.5" fill="#FF8844"/>
+            <!-- Botón -->
+            <rect x="15" y="160" width="64" height="11" rx="5.5" fill="#2DD4BF" opacity="0.17" stroke="#2DD4BF" stroke-width="0.7"/>
+            <rect x="35" y="163" width="24" height="4" rx="2" fill="#2DD4BF" opacity="0.5"/>
+            <!-- Home indicator -->
+            <rect x="32" y="178" width="30" height="2" rx="1" fill="white" opacity="0.18"/>
+          </g>
+
+          <!-- Notch -->
+          <polygon points="142,95 166,104 174,101 150,92" fill="#0A0430" opacity="0.9"/>
+          <ellipse cx="169" cy="101" rx="2.5" ry="1.5" fill="#2DD4BF" opacity="0.45"/>
+
+          <!-- Borde pantalla -->
+          <polygon points="108,98 202,132 202,320 108,286" fill="none" stroke="#5544AA" stroke-width="0.7" opacity="0.45"/>
+
+          <!-- CARDS FLOTANTES con mini efecto 3D -->
+          <!-- Card 1 -->
+          <g>
+            <polygon points="252,86 348,86 352,81 256,81" fill="#2D1478" opacity="0.4"/>
+            <polygon points="348,86 352,81 352,131 348,136" fill="#1A0A4A" opacity="0.45"/>
+            <rect x="252" y="86" width="96" height="50" rx="9" fill="#1A0A4A" fill-opacity="0.55" stroke="#2DD4BF" stroke-width="0.9" filter="url(#ig)"/>
+            <text x="300" y="107" text-anchor="middle" font-family="sans-serif" font-size="7.5" fill="#2DD4BF" font-weight="600">Nombre de marca</text>
+            <rect x="264" y="114" width="72" height="4" rx="2" fill="#2DD4BF" opacity="0.4"/>
+            <rect x="272" y="122" width="48" height="3" rx="1.5" fill="#9B7AFF" opacity="0.3"/>
+            <animate attributeName="transform" attributeType="XML" type="translate" values="0,0;0,-6;0,0" dur="4s" repeatCount="indefinite"/>
+          </g>
+          <!-- Card 2 -->
+          <g>
+            <polygon points="260,165 346,165 350,160 264,160" fill="#2D1478" opacity="0.35"/>
+            <polygon points="346,165 350,160 350,206 346,211" fill="#1A0A4A" opacity="0.4"/>
+            <rect x="260" y="165" width="86" height="46" rx="9" fill="#1A0A4A" fill-opacity="0.5" stroke="#A78BFA" stroke-width="0.8" filter="url(#ig)"/>
+            <text x="303" y="185" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#A78BFA" font-weight="600">Disponibilidad</text>
+            <circle cx="272" cy="196" r="3" fill="#2DD4BF" opacity="0.5"/><rect x="280" y="194" width="28" height="3" rx="1.5" fill="#2DD4BF" opacity="0.4"/>
+            <circle cx="272" cy="205" r="3" fill="#9B7AFF" opacity="0.4"/><rect x="280" y="203" width="20" height="3" rx="1.5" fill="#9B7AFF" opacity="0.3"/>
+            <animate attributeName="transform" attributeType="XML" type="translate" values="0,0;0,-5;0,0" dur="5.5s" repeatCount="indefinite"/>
+          </g>
+          <!-- Card 3 -->
+          <g>
+            <polygon points="254,242 346,242 350,237 258,237" fill="#2D1478" opacity="0.35"/>
+            <polygon points="346,242 350,237 350,280 346,285" fill="#1A0A4A" opacity="0.4"/>
+            <rect x="254" y="242" width="92" height="43" rx="9" fill="#1A0A4A" fill-opacity="0.5" stroke="#FF88CC" stroke-width="0.8" filter="url(#ig)"/>
+            <text x="300" y="260" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#FF88CC" font-weight="600">Paleta de marca</text>
+            <circle cx="268" cy="272" r="5" fill="#E8005A" opacity="0.85"/>
+            <circle cx="281" cy="272" r="5" fill="#7C3AED" opacity="0.85"/>
+            <circle cx="294" cy="272" r="5" fill="#2DD4BF" opacity="0.85"/>
+            <circle cx="307" cy="272" r="5" fill="#F0EEFF" opacity="0.75"/>
+            <animate attributeName="transform" attributeType="XML" type="translate" values="0,0;0,-7;0,0" dur="6s" repeatCount="indefinite"/>
+          </g>
+
+          <!-- Líneas conectoras -->
+          <line x1="240" y1="111" x2="252" y2="111" stroke="#2DD4BF" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.35"/>
+          <line x1="240" y1="188" x2="260" y2="188" stroke="#A78BFA" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.3"/>
+          <line x1="240" y1="264" x2="254" y2="264" stroke="#FF88CC" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.3"/>
+
+          <!-- Partículas -->
+          <circle cx="78" cy="228" r="2.5" fill="#2DD4BF" opacity="0.4"><animate attributeName="cy" values="228;213;228" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/></circle>
+          <circle cx="66" cy="298" r="1.8" fill="#9B7AFF" opacity="0.35"><animate attributeName="cy" values="298;283;298" dur="5s" repeatCount="indefinite"/></circle>
+          <circle cx="358" cy="148" r="2" fill="#FF88CC" opacity="0.35"><animate attributeName="cy" values="148;133;148" dur="3.5s" repeatCount="indefinite"/></circle>
+          <circle cx="344" cy="308" r="2.2" fill="#2DD4BF" opacity="0.3"><animate attributeName="cy" values="308;293;308" dur="6s" repeatCount="indefinite"/></circle>
+        </svg>
+
+                <div class="nl-float-tag one">🧠 <strong>IA + Diseñador humano</strong><br><span>La dupla perfecta</span></div>
+        <div class="nl-float-tag two">✓ <strong>100% gratis</strong><br><span>Sin registro requerido</span></div>
+    </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="features13 cid-sxmiPS5yDj" id="features14-n">
-    
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="mbr-section-title align-center mb-4 mbr-fonts-style display-2"><strong>Lo que hacemos</strong></h3>
-            </div>
-            <div class="card col-12 col-md-4 col-lg-2 p-3">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <a href="portafolio.html#gallery4-t"><span class="mbr-iconfont mbrib-idea" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255);"></span></a>
-                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7"><strong>Diseño</strong></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-4 col-lg-2">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <a href="portafolio.html#gallery2-k"><span class="mbr-iconfont mbrib-rocket" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255);"></span></a>
-                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7">
-                            <strong>Branding</strong></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-4 col-lg-2">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <a href="talonarios.html"><span class="mbr-iconfont mbrib-edit" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255);"></span></a>
-                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7">
-                            <strong>Talonarios</strong></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-4 col-lg-2">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                        <span class="mbr-iconfont mbrib-video-play" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255);"></span>
-                        <h4 class="card-title align-center mbr-black mbr-fonts-style display-7">
-                            <strong>Motion</strong></h4>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
+<!-- ===== CTA NEON ===== -->
+<section class="cta-section z" id="contacto">
+  <div class="cta-neon-line top"></div>
+  <div class="cta-neon-line bottom"></div>
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="cta-orb cta-orb-3"></div>
+  <div class="container">
+    <div class="cta-neon-card rev">
+      <div class="wa-icon-wrap">
+        <div class="wa-neon-ring"></div>
+        <div class="wa-neon-ring"></div>
+        <div class="wa-icon-core"><i class="fab fa-whatsapp"></i></div>
+      </div>
+      <h2 class="cta-neon-title">¡Cuéntanos tu proyecto!</h2>
+      <p class="cta-neon-sub">Recibe una cotización inmediata y personalizada. Logos, talonarios, etiquetas y mucho más — respondemos rápido.</p>
+      <a href="https://wa.me/56998105491?text=Hola%20Agencia%20Trazo,%20me%20gustaría%20cotizar%20un%20proyecto." class="btn-wa-neon" target="_blank">
+        <i class="fab fa-whatsapp"></i> Iniciar chat de cotización
+      </a>
+      <p class="cta-neon-meta">Lun–Vie · 09:00 a 19:00 hrs · contacta.trazo@gmail.com</p>
     </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="features4 cid-swGeGh2boc mbr-parallax-background" id="features5-e">
-
-    
-
-    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);">
+<!-- ===== FOOTER ===== -->
+<footer class="z">
+  <div class="footer-top">
+    <div>
+      <img src="assets/images/logo-trazo-web-124x103.png" alt="Agencia Trazo" style="height:2.1rem;opacity:.65;filter:brightness(10);">
+      <div class="footer-brand-name">Agencia Trazo<span>.</span></div>
+      <p class="footer-tagline">Diseño gráfico e imprenta en Santiago, Chile.<br>Puente Alto · Lun–Vie 09:00–19:00</p>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="card-wrapper">
-                    <div class="row">
-                        <div class="col-12 col-md-7">
-                            <div class="text-wrapper">
-                                <h6 class="card-subtitle mbr-fonts-style mb-2 display-4">Cración de identidad visual</h6>
-                                <h5 class="card-title mbr-fonts-style display-5">
-                                    <strong>Creamos marcas únicas</strong></h5>
-                                <p class="mbr-text mbr-fonts-style mb-5 display-4">Tu imagen debe ser única y no sacada de un banco de imágenes que cualquiera puede tener.<br>El logo es la primera imagen que tienen los clientes de ti.<br>¡Muéstrate al mundo como alguien profesional!</p>
-                                <div class="mbr-section-btn"><a href="portafolio.html" class="btn btn-warning display-4">Ver más</a></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-5">
-                            <div class="img-wrapper">
-                                <img src="assets/images/web-portafolio-asset-357x357.png" alt="Mobirise">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="card-wrapper">
-                    <div class="row">
-                        <div class="col-12 col-md-7">
-                            <div class="text-wrapper">
-                                <h6 class="card-subtitle mbr-fonts-style mb-2 display-4">
-                                    Talonarios</h6>
-                                <h5 class="card-title mbr-fonts-style display-5">
-                                    <strong>Talonarios 100% personalizados</strong></h5>
-                                <p class="mbr-text mbr-fonts-style mb-5 display-4">Qué es la Papelería corporativa funcional?. Es aquella que te ayuda no solo a mantener en contacto con tus clientes, sino que también cumple funciones de organización y gestión interna dentro de tu negocio.</p>
-                                <div class="mbr-section-btn"><a href="talonarios.html" class="btn btn-warning display-4">Quiero un talonario</a></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-5">
-                            <div class="img-wrapper">
-                                <img src="assets/images/8d661f58-e736-4073-8b57-7fa6578c62b2-357x357.jpg" alt="Mobirise">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="footer-col">
+      <h5>Talonarios</h5>
+      <a href="formularios.html">Talonarios</a>
+      <a href="recetarios.html">Recetarios</a>
+      <a href="talonarios-rifa-bingo-tickets.html">Bingos &amp; Rifas</a>
     </div>
-</section>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<style>
-    /* Contenedor principal con esferas de fondo */
-    .gamer-section {
-        position: relative;
-        padding: 100px 0;
-        background-color: #ffffff; /* Fondo Blanco */
-        overflow: hidden;
-        z-index: 1;
-    }
-
-    /* Esferas Neón de fondo */
-    .gamer-section .sphere {
-        position: absolute;
-        border-radius: 50%;
-        filter: blur(60px);
-        z-index: -1;
-        opacity: 0.6;
-        animation: floatSphere 15s infinite alternate ease-in-out;
-    }
-    .sphere-1 { width: 300px; height: 300px; background: #00d4ff; top: 10%; left: -5%; animation-delay: 0s; }
-    .sphere-2 { width: 250px; height: 250px; background: #ff007f; bottom: 10%; right: -5%; animation-delay: -5s; }
-    .sphere-3 { width: 200px; height: 200px; background: #8c00ff; top: 40%; right: 20%; animation-delay: -2s; }
-
-    @keyframes floatSphere {
-        from { transform: translate(0, 0) rotate(0deg); }
-        to { transform: translate(50px, 100px) rotate(30deg); }
-    }
-
-    /* Tarjeta Glassmorphism */
-    .glass-card {
-        background: rgba(255, 255, 255, 0.4) !important;
-        backdrop-filter: blur(20px) saturate(160%);
-        -webkit-backdrop-filter: blur(20px) saturate(160%);
-        border: 1px solid rgba(255, 255, 255, 0.7) !important;
-        border-radius: 30px !important;
-        padding: 50px 40px !important;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.05) !important;
-        transition: transform 0.3s ease;
-    }
-    
-    .glass-card:hover {
-        transform: translateY(-5px);
-        border-color: #8c00ff !important;
-    }
-
-    /* Botón estilo Gamer */
-    .btn-gamer {
-        background: linear-gradient(90deg, #25d366, #128c7e) !important;
-        border: none !important;
-        color: white !important;
-        font-weight: 800 !important;
-        letter-spacing: 1px;
-        padding: 18px 40px !important;
-        border-radius: 50px !important;
-        text-transform: uppercase;
-        box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3) !important;
-        transition: 0.3s !important;
-        display: inline-block;
-        text-decoration: none;
-    }
-
-    .btn-gamer:hover {
-        transform: scale(1.05);
-        box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5) !important;
-        filter: brightness(1.1);
-    }
-
-    .whatsapp-icon-main {
-        font-size: 4.5rem;
-        background: linear-gradient(45deg, #25d366, #8c00ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 25px;
-    }
-</style>
-
-<section class="gamer-section" id="cotizacion-seccion">
-    <div class="sphere sphere-1"></div>
-    <div class="sphere sphere-2"></div>
-    <div class="sphere sphere-3"></div>
-
-    <div class="container">
-        <div class="mbr-section-head" style="text-align: center; margin-bottom: 50px;">
-            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2" style="font-family: 'Orbitron', sans-serif; color: #1a1a1a;">
-                <strong>¡CUÉNTANOS TU PROYECTO!</strong>
-            </h3>
-            <p class="mbr-text mbr-fonts-style mt-3 display-7" style="color: #555; max-width: 600px; margin: auto;">
-                Recibe una cotización inmediata y personalizada con la mejor tecnología de impresión.
-            </p>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-7 mx-auto" style="text-align: center;">
-                <div class="glass-card">
-                    <i class="fab fa-whatsapp whatsapp-icon-main"></i>
-                    
-                    <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-7" style="color: #333; font-weight: 600;">
-                        ¿Buscas Logos, Talonarios o Etiquetas?
-                    </h4>
-                    
-                    <a href="https://wa.me/56998105491?text=Hola%20Agencia%20Trazo,%20me%20gustaría%20cotizar%20un%20proyecto." 
-                       class="btn-gamer" 
-                       target="_blank">
-                        INICIAR CHAT DE COTIZACIÓN
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="footer-col">
+      <h5>Productos</h5>
+      <a href="tarjetas-polimate.html">Tarjetas Polimate</a>
+      <a href="tarjetas-sectorizadas.html">Brillo Sectorizado</a>
+      <a href="productos.html">Flyers &amp; Stickers</a>
+      <a href="regalos_corporativos.html">Regalos Corporativos</a>
     </div>
-</section>
-
-<section data-bs-version="5.1" class="contacts2 cid-swFMAlHQos" id="contacts2-8">
-    <!---->
-    
-    
-    <div class="container">
-        <div class="mbr-section-head">
-            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>agenciatrazo.cl</strong></h3>
-            
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="image-wrapper">
-                        <span class="mbr-iconfont mobi-mbri-letter mobi-mbri" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255);"></span>
-                    </div>
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
-                            <strong>Mail</strong></h6>
-                        <p class="mbr-text mbr-fonts-style display-7">contacta.trazo@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-12 col-md-6">
-                <div class="card-wrapper">
-                    <div class="image-wrapper">
-                        <span class="mbr-iconfont mobi-mbri-clock mobi-mbri" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255);"></span>
-                    </div>
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style mb-1 display-5">
-                            <strong>Horario de atención</strong></h6>
-                        <p class="mbr-text mbr-fonts-style display-7">09:00 a 19:00 Hrs.</p>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
+    <div class="footer-col">
+      <h5>Más</h5>
+      <a href="planes.html">Packs Logo</a>
+      <a href="portafolio.html">Portafolio</a>
+      <a href="naminglab.html">NamingLab ✦</a>
+      <a href="https://www.instagram.com/imprenta_trazo.cl/" target="_blank">Instagram</a>
+      <a href="https://share.google/5eeBbx6FZM39wuZMh" target="_blank">Google Maps</a>
     </div>
-</section>
-
-<section data-bs-version="5.1" class="footer5 cid-sxNqn1xpP0" once="footers" id="footer5-s">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="col-md-1 col-6">
-                <div class="media-wrap">
-                    <a href="index.html">
-                        <img src="assets/images/logo-trazo-web-124x103.png" alt="index">
-                    </a>
-                </div>
-            </div>
-            <div class="col-11 col-6">
-                <p class="mbr-text align-right links mbr-fonts-style display-7"><a href="index.html" class="text-danger text-primary">inicio&nbsp; &nbsp; &nbsp;&nbsp;</a><a href="index.html#form5-c" class="text-danger text-primary">Contacto</a></p>
-            </div>
-        </div>
-        <!-- <div class="media-container-row">
-            <div class="col-md-12"> -->
-        <div class="footer-lower">
-            <div class="media-container-row">
-                <div class="col-md-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="media-container-row">
-                <div class="col-md-6 copyright">
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        © Copyright 2021 Agenciatrazo.cl - All Rights Reserved
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="social-list align-right">
-                        <div class="soc-item">
-                            <a href="https://www.instagram.com/imprenta_trazo.cl/" target="_blank">
-                                <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon" style="color: rgb(140, 0, 255); fill: rgb(140, 0, 255);"></span>
-                            </a>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            <!-- </div>
-            </div> -->
-        </div>
-
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Agencia Trazo — Todos los derechos reservados · agenciatrazo.cl</span>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/imprenta_trazo.cl/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/56998105491" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:contacta.trazo@gmail.com"><i class="far fa-envelope"></i></a>
     </div>
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/parallax/jarallax.js"></script>
-<script src="assets/smoothscroll/smooth-scroll.js"></script>
-<script src="assets/ytplayer/index.js"></script>
-<script src="assets/dropdown/js/navbar-dropdown.js"></script>
-<script src="assets/embla/embla.min.js"></script>
-<script src="assets/embla/script.js"></script>
-<script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
-<script src="assets/theme/js/script.js"></script>
-<script src="assets/formoid/formoid.min.js"></script>  
-  
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </div>
+</footer>
 
-<style>
-    .whatsapp-float {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        /* Degradado moderno */
-        background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-        color: white;
-        width: 65px;
-        height: 65px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 32px;
-        z-index: 9999;
-        text-decoration: none;
-        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-        
-        /* Animaciones */
-        animation: floating 3s ease-in-out infinite, pulse-green 2s infinite;
-        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+<!-- CHATBOT BUTTON -->
+<button class="chat-float" id="chatBtn" aria-label="Abrir chat">
+  <span class="chat-float-icon">💬</span>
+  <span class="chat-float-dot"></span>
+</button>
+
+<!-- CHATBOT PANEL -->
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-header">
+    <div class="chat-agent">
+      <div class="chat-avatar">A</div>
+      <div>
+        <div class="chat-agent-name">Alberto</div>
+        <div class="chat-agent-status"><span class="chat-status-dot"></span>En línea</div>
+      </div>
+    </div>
+    <button class="chat-close" id="chatClose">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" class="chat-input" placeholder="Escribe lo que buscas..." autocomplete="off"/>
+    <button class="chat-send" id="chatSend">➤</button>
+  </div>
+</div>
+
+<!-- Three.js -->
+
+
+<script>
+/* NAV */
+const mainNav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => mainNav.classList.toggle('scrolled', window.scrollY > 50));
+const ham = document.getElementById('ham');
+const mobileNav = document.getElementById('mobileNav');
+ham.addEventListener('click', () => {
+  const open = ham.classList.toggle('open');
+  mobileNav.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+function closeMobile() { ham.classList.remove('open'); mobileNav.classList.remove('open'); document.body.style.overflow = ''; }
+function toggleSub(id, el) {
+  const sub = document.getElementById(id);
+  const arrow = el.querySelector('.mob-arrow');
+  sub.classList.toggle('open');
+  arrow.classList.toggle('open', sub.classList.contains('open'));
+}
+
+/* TYPEWRITER */
+const words = ['necesita.','merece.','sueña.','proyecta.','vende.','comunica.'];
+let wi=0, ci=0, del=false;
+const twEl = document.getElementById('tw-text');
+function tick() {
+  const w = words[wi];
+  twEl.innerHTML = w.slice(0,ci) + '<span class="tw-cur"></span>';
+  if (!del) { ci++; if (ci > w.length) { del=true; setTimeout(tick,2200); return; } setTimeout(tick,85); }
+  else { ci--; if (ci < 0) { del=false; wi=(wi+1)%words.length; ci=0; setTimeout(tick,350); return; } setTimeout(tick,45); }
+}
+setTimeout(tick, 1000);
+
+/* HERO CARDS STACK — rotan posición cada 5s */
+(function initHeroCards() {
+  const cards = [...document.querySelectorAll('.hv-card')];
+  if (!cards.length) return;
+  // posiciones actuales: índice = card, valor = pos (0=frente,1=medio,2=atrás)
+  let positions = [0, 1, 2];
+
+  function rotate() {
+    // pausa float durante transición
+    cards.forEach(c => c.classList.add('rotating'));
+    // rotar: la del frente va atrás, las demás avanzan
+    positions = positions.map(p => (p + 2) % 3);
+    cards.forEach((c, i) => c.setAttribute('data-pos', positions[i]));
+    // restaurar float después de la transición
+    setTimeout(() => cards.forEach(c => c.classList.remove('rotating')), 850);
+  }
+
+  setInterval(rotate, 5000);
+})();
+
+
+
+/* CAROUSEL */
+(function initCarousel() {
+  const stage = document.getElementById('carouselStage');
+  const dotsWrap = document.getElementById('cDots');
+  if (!stage) return;
+  const PRODUCTS = [
+    {href:'talonarios.html',img:'assets/images/notepad-presentation-mockup-vol4-443x443.png',name:'Talonarios',desc:'Comprobantes, órdenes de trabajo y recetarios.',lbl:'Desde',price:'$11.600',cta:'Ver precios'},
+    {href:'talonarios-rifa-bingo-tickets.html',img:'assets/images/whatsapp-image-2026-01-06-at-17.22.56-1-783x571.jpeg',name:'Bingos & Rifas',desc:'Tickets para sorteos y eventos deportivos.',lbl:'Desde',price:'$14.500',cta:'Ver más'},
+    {href:'tarjetas-sectorizadas.html',img:'assets/images/whatsapp-image-2024-12-04-at-17.01.40-600x1066.jpeg',name:'Brillo Sectorizado',desc:'Barniz UV de alto impacto. Acabado premium.',lbl:'x1.000 un.',price:'$77.900',cta:'Comprar'},
+    {href:'https://wa.link/oxc1ku',img:'assets/images/mock-up-flyer-600x400.png',name:'Flyers',desc:'Diseño e impresión full color. 1.000 un.',lbl:'Desde',price:'$34.900',cta:'Comprar',ext:true},
+    {href:'tarjetas-polimate.html#tabs1-6c',img:'assets/images/gemini-generated-image-a48heoa48heoa48h-2-1024x1024.png',name:'Tarjetas Polimate',desc:'Alta calidad. Acabado profesional garantizado.',lbl:'Desde',price:'$35.900',cta:'Comprar'},
+    {href:'https://wa.link/oxc1ku',img:'assets/images/roll-up-mockup-100200-cm-607d6d570a2bd-900x.webp',name:'Pendón Roller 80×200',desc:'Incluye estructura aluminio + bolso.',lbl:'Precio',price:'$65.900',cta:'Comprar',ext:true},
+    {href:'https://wa.link/oxc1ku',img:'assets/images/whatsapp-image-2025-11-05-at-18.47.04-325x722.jpg',name:'Stickers DTF UV',desc:'Alta resolución y colores vibrantes.',lbl:'Desde',price:'$14.900',cta:'Comprar',ext:true},
+    {href:'planes.html#content4-1h',img:'assets/images/mbr-5-1920x1277.jpeg',name:'Diseño de Logo',desc:'Desde plan básico hasta branding completo.',lbl:'Desde',price:'$45.900',cta:'Ver planes'},
+  ];
+  const N=PRODUCTS.length; let activeIdx=0,autoTimer,dragStartX=null;
+
+  const cardEls=PRODUCTS.map((p,i)=>{
+    const a=document.createElement('a');
+    a.className='c-card'; a.href=p.href; if(p.ext)a.target='_blank';
+    a.innerHTML=`<div class="c-img"><img src="${p.img}" alt="${p.name}" loading="lazy"></div><div class="c-name">${p.name}</div><div class="c-desc">${p.desc}</div><div class="c-price-row"><div><div class="c-price-lbl">${p.lbl}</div><div class="c-price">${p.price}</div></div><span class="c-btn">${p.cta} →</span></div>`;
+    a.addEventListener('click',e=>{if(a.dataset.dragged==='1')e.preventDefault();});
+    stage.appendChild(a); return a;
+  });
+
+  function buildDots(){dotsWrap.innerHTML='';PRODUCTS.forEach((_,i)=>{const d=document.createElement('div');d.className='sl-dot'+(i===0?' active':'');d.onclick=()=>goTo(i);dotsWrap.appendChild(d);});}
+  function updateDots(){[...dotsWrap.querySelectorAll('.sl-dot')].forEach((d,i)=>d.classList.toggle('active',i===activeIdx));}
+
+  function getConfig(){const w=window.innerWidth;return{gap:w<600?280:360};}
+
+  function getTransform(pos){
+    const{gap}=getConfig(); const abs=Math.abs(pos);
+    if(abs>3.5)return{x:pos*gap,y:20,scale:0.55,opacity:0,z:-5};
+    const scales=[1.07,0.88,0.74,0.60],ys=[-16,4,12,18],ops=[1,0.82,0.60,0];
+    const idx=Math.min(Math.round(abs),3);
+    return{x:pos*gap,y:ys[idx],scale:scales[idx],opacity:ops[idx],z:-idx};
+  }
+
+  function applyTransforms(offsetFrac){
+    const frac=offsetFrac||0;
+    cardEls.forEach((el,i)=>{
+      let pos=i-activeIdx-frac;
+      if(pos>N/2)pos-=N; if(pos<-N/2)pos+=N;
+      const t=getTransform(pos);
+      el.style.transition=frac!==0?'none':'';
+      el.style.transform=`translateX(${t.x}px) translateY(${t.y}px) scale(${t.scale})`;
+      el.style.opacity=t.opacity; el.style.zIndex=Math.round(t.z)+5;
+      el.classList.toggle('is-center',Math.abs(pos)<0.5);
+      el.style.pointerEvents=Math.abs(pos)<=2?'auto':'none';
+    });
+    if(frac===0)updateDots();
+  }
+
+  function goTo(i){activeIdx=((i%N)+N)%N;applyTransforms(0);}
+  function startAuto(){clearInterval(autoTimer);autoTimer=setInterval(()=>goTo(activeIdx+1),2800);}
+
+  document.getElementById('cPrev').onclick=()=>{goTo(activeIdx-1);startAuto();};
+  document.getElementById('cNext').onclick=()=>{goTo(activeIdx+1);startAuto();};
+
+  stage.addEventListener('mousedown',e=>{dragStartX=e.clientX;clearInterval(autoTimer);stage.classList.add('dragging');e.preventDefault();});
+  window.addEventListener('mousemove',e=>{if(dragStartX===null)return;const diff=e.clientX-dragStartX;applyTransforms(-diff/getConfig().gap);});
+  window.addEventListener('mouseup',e=>{
+    if(dragStartX===null)return;
+    const diff=dragStartX-e.clientX;
+    cardEls.forEach(c=>c.dataset.dragged=Math.abs(diff)>8?'1':'0');
+    if(Math.abs(diff)>60)goTo(activeIdx+(diff>0?1:-1));else applyTransforms(0);
+    dragStartX=null;stage.classList.remove('dragging');startAuto();
+    setTimeout(()=>cardEls.forEach(c=>delete c.dataset.dragged),200);
+  });
+  stage.addEventListener('touchstart',e=>{dragStartX=e.touches[0].clientX;clearInterval(autoTimer);},{passive:true});
+  stage.addEventListener('touchmove',e=>{if(dragStartX===null)return;const diff=e.touches[0].clientX-dragStartX;applyTransforms(-diff/getConfig().gap);},{passive:true});
+  stage.addEventListener('touchend',e=>{if(dragStartX===null)return;const diff=dragStartX-e.changedTouches[0].clientX;if(Math.abs(diff)>60)goTo(activeIdx+(diff>0?1:-1));else applyTransforms(0);dragStartX=null;startAuto();});
+  window.addEventListener('resize',()=>applyTransforms(0));
+
+  buildDots(); applyTransforms(0); startAuto();
+})();
+
+/* ACORDEÓN */
+function toggleAcc(toggle){
+  const body=toggle.nextElementSibling;
+  const isOpen=body.classList.toggle('open');
+  toggle.classList.toggle('open',isOpen);
+  toggle.querySelector('span:first-child').textContent=isOpen?'Ocultar detalles':'Ver detalles';
+}
+
+/* SPLIT SLIDER MÓVIL */
+(function initSplitSlider(){
+  const grid=document.getElementById('splitGrid');
+  const dots=document.querySelectorAll('.split-dot');
+  if(!grid)return;
+  let idx=0,startX=0,isDrag=false;
+  function isMobile(){return window.innerWidth<950;}
+  function cardW(){const c=grid.querySelector('.split-card');return c?c.offsetWidth+16:0;}
+  function splitGoToInternal(i){
+    idx=Math.max(0,Math.min(i,1));
+    grid.style.transition='transform .45s cubic-bezier(.4,0,.2,1)';
+    grid.style.transform=`translateX(-${idx*cardW()}px)`;
+    dots.forEach((d,j)=>d.classList.toggle('active',j===idx));
+  }
+  window.splitGoTo=splitGoToInternal;
+  grid.addEventListener('mousedown',e=>{if(!isMobile())return;isDrag=true;startX=e.clientX;grid.style.transition='none';grid.classList.add('dragging');});
+  window.addEventListener('mouseup',e=>{if(!isDrag)return;isDrag=false;grid.classList.remove('dragging');const diff=startX-e.clientX;if(Math.abs(diff)>50)splitGoToInternal(idx+(diff>0?1:-1));else splitGoToInternal(idx);});
+  window.addEventListener('mousemove',e=>{if(!isDrag)return;grid.style.transform=`translateX(-${Math.max(0,(idx*cardW())+(startX-e.clientX))}px)`;});
+  grid.addEventListener('touchstart',e=>{if(!isMobile())return;startX=e.touches[0].clientX;grid.style.transition='none';},{passive:true});
+  grid.addEventListener('touchmove',e=>{if(!isMobile())return;grid.style.transform=`translateX(-${Math.max(0,(idx*cardW())+(startX-e.touches[0].clientX))}px)`;},{passive:true});
+  grid.addEventListener('touchend',e=>{if(!isMobile())return;const diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>50)splitGoToInternal(idx+(diff>0?1:-1));else splitGoToInternal(idx);});
+  window.addEventListener('resize',()=>{if(!isMobile()){grid.style.transform='';grid.style.transition='';idx=0;}else splitGoToInternal(idx);});
+})();
+
+
+/* ===== SEARCH ===== */
+(function(){
+  const btn = document.getElementById('searchBtn');
+  const overlay = document.getElementById('searchOverlay');
+  const closeBtn = document.getElementById('searchClose');
+  const input = document.getElementById('searchInput');
+  const results = document.getElementById('searchResults');
+  if(!btn||!overlay) return;
+
+  const PRODUCTS = [
+    {icon:'🖨️', name:'Talonarios autocopiativos', cat:'Imprenta', url:'formularios.html', kw:['talonario','formulario','copia','autocopiativo','comprobante','orden']},
+    {icon:'📄', name:'Talonarios simples sin copia', cat:'Imprenta', url:'formularios.html', kw:['talonario','simple','sin copia','nota']},
+    {icon:'🩺', name:'Recetarios médicos', cat:'Imprenta', url:'recetarios.html', kw:['receta','recetario','medico','médico','doctor','veterinario','dental','dentista','psicologo','cirujano','oculista']},
+    {icon:'🎟️', name:'Talonarios Bingos & Rifas', cat:'Imprenta', url:'talonarios-rifa-bingo-tickets.html', kw:['bingo','rifa','ticket','sorteo','evento','deportivo']},
+    {icon:'💳', name:'Tarjetas Polimate', cat:'Imprenta', url:'tarjetas-polimate.html', kw:['tarjeta','polimate','presentacion','presentación']},
+    {icon:'✨', name:'Tarjetas Brillo Sectorizado UV', cat:'Imprenta', url:'tarjetas-sectorizadas.html', kw:['brillo','sectorizado','uv','barniz','tarjeta']},
+    {icon:'📃', name:'Flyers', cat:'Imprenta', url:'productos.html', kw:['flyer','volante','folleto']},
+    {icon:'📍', name:'Pendón Roller 80×200 cm', cat:'Imprenta', url:'productos.html', kw:['pendon','pendón','roller','banner','lona']},
+    {icon:'⬡', name:'Stickers DTF UV', cat:'Imprenta', url:'productos.html', kw:['sticker','dtf','uv','adhesivo']},
+    {icon:'⬡', name:'Stickers troquelados por m²', cat:'Imprenta', url:'productos.html', kw:['sticker','troquelado','vinilo','mt2','metro']},
+    {icon:'🎨', name:'Diseño de Logo & Branding', cat:'Diseño', url:'planes.html', kw:['logo','marca','branding','identidad','diseño','imagotipo']},
+    {icon:'🎁', name:'Regalos corporativos', cat:'Diseño', url:'regalos_corporativos.html', kw:['regalo','corporativo','taza','mousepad','libreta']},
+    {icon:'🏷️', name:'NamingLab — generador de nombres', cat:'Herramienta IA', url:'naminglab.html', kw:['naming','nombre','naminglab','ia']},
+    {icon:'🖼️', name:'Portafolio de diseño', cat:'Diseño', url:'portafolio.html', kw:['portafolio','trabajos','ejemplos','galería']},
+    {icon:'📦', name:'Dípticos & Trípticos', cat:'Imprenta', url:'productos.html', kw:['diptico','tríptico','brochure','folleto']},
+    {icon:'🏅', name:'Diplomas & Certificados', cat:'Imprenta', url:'productos.html', kw:['diploma','certificado','distincion']},
+    {icon:'📌', name:'Separadores de libro', cat:'Imprenta', url:'productos.html', kw:['separador','marcapaginas','libro']},
+  ];
+
+  function search(q){
+    const ql = q.toLowerCase().trim();
+    if(!ql) return [];
+    return PRODUCTS.filter(p=>
+      p.name.toLowerCase().includes(ql) ||
+      p.cat.toLowerCase().includes(ql) ||
+      p.kw.some(k=>k.includes(ql)||ql.includes(k))
+    );
+  }
+
+  function render(q){
+    const res = search(q);
+    if(!q.trim()){results.innerHTML='';return;}
+    if(!res.length){
+      results.innerHTML='<div class="search-no-results">No encontramos "'+q.replace(/</g,'&lt;')+'". Prueba con: talonarios, logos, flyers, stickers...</div>';
+      return;
     }
+    results.innerHTML = res.map(p=>
+      '<a class="search-result-item" href="'+p.url+'"><span class="search-result-icon">'+p.icon+'</span><div><div class="search-result-name">'+p.name+'</div><div class="search-result-cat">'+p.cat+'</div></div></a>'
+    ).join('');
+  }
 
-    /* Efecto al pasar el mouse */
-    .whatsapp-float:hover {
-        transform: scale(1.1) rotate(10deg);
-        box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+  function openSearch(){
+    overlay.style.display='flex';
+    requestAnimationFrame(()=>{ overlay.classList.add('open'); });
+    setTimeout(()=>{ try{input.focus();}catch(e){} }, 300);
+  }
+  function closeSearch(){
+    overlay.classList.remove('open');
+    setTimeout(()=>{ overlay.style.display='none'; results.innerHTML=''; input.value=''; }, 310);
+  }
+  btn.addEventListener('click', openSearch);
+  btn.addEventListener('touchend', e=>{ e.preventDefault(); openSearch(); });
+  closeBtn.addEventListener('click', closeSearch);
+  overlay.addEventListener('click', e=>{ if(e.target===overlay) closeSearch(); });
+  input.addEventListener('input', ()=>render(input.value));
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeSearch(); });
+})();
+
+/* ===== CHATBOT ALBERTO ===== */
+(function(){
+  const chatBtn = document.getElementById('chatBtn');
+  const chatPanel = document.getElementById('chatPanel');
+  const chatClose = document.getElementById('chatClose');
+  const chatMessages = document.getElementById('chatMessages');
+  const chatInput = document.getElementById('chatInput');
+  const chatSend = document.getElementById('chatSend');
+  if(!chatBtn||!chatPanel) return;
+
+  const WSP = 'https://wa.me/56998105491?text=Hola%20Agencia%20Trazo!%20quiero%20cotizar';
+
+  const TREE = {
+    start:{
+      msg:'Hola soy Alberto y puedo ayudarte en tu búsqueda en nuestra WEB,<br>puedes elegir una opción o escribirme lo que buscas.',
+      opts:[
+        {t:'🖨️ Talonarios con copia',n:'talonarios'},
+        {t:'📄 Talonarios sin copia',n:'tal_simple'},
+        {t:'🩺 Recetarios',n:'recetarios'},
+        {t:'🎟️ Bingos & Rifas',n:'bingos'},
+        {t:'💳 Tarjetas de presentación',n:'tarjetas'},
+        {t:'📃 Flyers',n:'flyers'},
+        {t:'⬡ Stickers',n:'stickers'},
+        {t:'📍 Pendón Roller',n:'pendones'},
+        {t:'🎨 Diseño de Logo',n:'logos'},
+        {t:'🎁 Regalos corporativos',n:'regalos'},
+      ]
+    },
+
+    /* ── TALONARIOS CON COPIA ── */
+    talonarios:{
+      msg:'Talonarios <b>con copia (papel autocopiativo)</b> — 50 hojas original + 50 hojas copia.<br>¿Qué tamaño necesitas?',
+      opts:[
+        {t:'Carta 21×27 cm',n:'p_ac'},
+        {t:'½ Carta 13×21 cm',n:'p_mc'},
+        {t:'¼ Carta 10×13 cm',n:'p_qc'},
+        {t:'Oficio 21×32 cm',n:'p_ao'},
+        {t:'½ Oficio 16×21 cm',n:'p_mo'},
+        {t:'¼ Oficio 10×16 cm',n:'p_qo'},
+        {t:'🔙 Inicio',n:'start'},
+      ]
+    },
+    p_ac:{msg:'📋 <b>Carta Duplicado 21×27 cm</b><br><small>50 hojas original + 50 hojas copia · IVA incl.</small>',prices:[['1','$25.400'],['2','$32.500'],['4','$41.900'],['6','$53.500'],['8','$59.900'],['10','$73.200'],['20','$137.900'],['40','$253.500']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'talonarios'},{t:'🏠 Inicio',n:'start'}]},
+    p_mc:{msg:'📋 <b>½ Carta Duplicado 13×21 cm</b><br><small>50 hojas original + 50 hojas copia · IVA incl.</small>',prices:[['1','$17.900'],['2','$24.200'],['4','$32.800'],['6','$39.200'],['8','$44.500'],['10','$49.900'],['20','$86.500'],['40','$139.900']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'talonarios'},{t:'🏠 Inicio',n:'start'}]},
+    p_qc:{msg:'📋 <b>¼ Carta Duplicado 10×13 cm</b><br><small>50 hojas original + 50 hojas copia · IVA incl.</small>',prices:[['1','$11.600'],['2','$16.800'],['4','$28.900'],['6','$31.500'],['8','$35.100'],['10','$38.900'],['20','$62.500'],['40','$81.600']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'talonarios'},{t:'🏠 Inicio',n:'start'}]},
+    p_ao:{msg:'📋 <b>Oficio Duplicado 21×32 cm</b><br><small>50 hojas original + 50 hojas copia · IVA incl.</small>',prices:[['1','$27.200'],['2','$35.200'],['4','$48.400'],['6','$57.900'],['8','$69.500'],['10','$81.900'],['20','$161.700'],['40','$285.500']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'talonarios'},{t:'🏠 Inicio',n:'start'}]},
+    p_mo:{msg:'📋 <b>½ Oficio Duplicado 16×21 cm</b><br><small>50 hojas original + 50 hojas copia · IVA incl.</small>',prices:[['1','$22.900'],['2','$28.300'],['4','$32.900'],['6','$39.900'],['8','$47.600'],['10','$55.400'],['20','$90.900'],['40','$173.800']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'talonarios'},{t:'🏠 Inicio',n:'start'}]},
+    p_qo:{msg:'📋 <b>¼ Oficio Duplicado 10×16 cm</b><br><small>50 hojas original + 50 hojas copia · IVA incl.</small>',prices:[['1','$19.800'],['2','$22.500'],['4','$30.500'],['6','$33.700'],['8','$38.900'],['10','$41.400'],['20','$59.900'],['40','$95.800']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'talonarios'},{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── TALONARIOS SIN COPIA ── */
+    tal_simple:{
+      msg:'Talonarios <b>sin copia</b> — 100 hojas por talonario. ¿Qué tamaño necesitas?',
+      opts:[
+        {t:'Carta 21×27 cm',n:'ps_carta'},
+        {t:'¼ Carta 10×13 cm',n:'ps_cuarto'},
+        {t:'🔙 Inicio',n:'start'},
+      ]
+    },
+    ps_carta:{msg:'📄 <b>Carta sin copia 21×27 cm</b><br><small>100 hojas por talonario · IVA incl.</small>',prices:[['1','$17.500'],['2','$29.700'],['4','$34.500'],['6','$45.500'],['8','$51.900'],['10','$65.500'],['20','$126.500'],['40','$220.900']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'tal_simple'},{t:'🏠 Inicio',n:'start'}]},
+    ps_cuarto:{msg:'📄 <b>¼ Carta sin copia 10×13 cm</b><br><small>100 hojas por talonario · IVA incl.</small>',prices:[['1','$14.500'],['2','$16.900'],['4','$21.700'],['6','$28.200'],['8','$31.900'],['10','$37.200'],['20','$65.900'],['40','$86.900']],link:{t:'Ver precios hasta 100 talonarios',u:'formularios.html'},wsp:true,opts:[{t:'🔙 Otro tamaño',n:'tal_simple'},{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── RECETARIOS ── */
+    recetarios:{
+      msg:'🩺 ¿Qué formato de recetario necesitas?',
+      opts:[
+        {t:'½ Carta 13×21 cm (estándar)',n:'rec_media'},
+        {t:'Carta 21×27 cm',n:'rec_carta'},
+        {t:'¼ Carta 10×13 cm',n:'rec_cuarto'},
+        {t:'🔙 Inicio',n:'start'},
+      ]
+    },
+    rec_media:{msg:'🩺 <b>Recetario ½ Carta 13×21 cm</b><br><small>100 hojas por talonario · IVA incl.</small>',prices:[['1','$11.000'],['2','$19.500'],['4','$30.500'],['6','$32.700'],['8','$34.900'],['10','$44.100'],['20','$66.900'],['40','$131.700']],link:{t:'Ver precios hasta 100 talonarios',u:'recetarios.html'},wsp:true,opts:[{t:'🔙 Otro formato',n:'recetarios'},{t:'🏠 Inicio',n:'start'}]},
+    rec_carta:{msg:'🩺 <b>Recetario Carta 21×27 cm</b><br><small>100 hojas por talonario · IVA incl.</small>',prices:[['1','$17.500'],['2','$29.700'],['4','$34.500'],['6','$45.500'],['8','$51.900'],['10','$65.500'],['20','$126.500'],['40','$220.900']],link:{t:'Ver precios hasta 100 talonarios',u:'recetarios.html'},wsp:true,opts:[{t:'🔙 Otro formato',n:'recetarios'},{t:'🏠 Inicio',n:'start'}]},
+    rec_cuarto:{msg:'🩺 <b>Recetario ¼ Carta 10×13 cm</b><br><small>100 hojas por talonario · IVA incl.</small>',prices:[['1','$14.500'],['2','$16.900'],['4','$21.700'],['6','$28.200'],['8','$31.900'],['10','$37.200'],['20','$65.900'],['40','$86.900']],link:{t:'Ver precios hasta 100 talonarios',u:'recetarios.html'},wsp:true,opts:[{t:'🔙 Otro formato',n:'recetarios'},{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── BINGOS & RIFAS ── */
+    bingos:{msg:'🎟️ <b>Talonarios de Bingo & Rifa</b><br>Incluye 1 prepicado y número de folio.<br><small>100 boletos por talonario · 6×19 cm aprox. · IVA incl.</small>',prices:[['1','$14.500'],['2','$16.900'],['4','$21.700'],['6','$28.200'],['8','$31.900'],['10','$37.200'],['20','$65.900'],['40','$86.900']],link:{t:'Ver precios hasta 100 talonarios',u:'talonarios-rifa-bingo-tickets.html'},wsp:true,opts:[{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── TARJETAS ── */
+    tarjetas:{
+      msg:'💳 ¿Qué tipo de tarjeta necesitas?',
+      opts:[
+        {t:'Tarjetas Polimate (1 cara)',n:'t_pol1'},
+        {t:'Tarjetas Polimate (2 caras)',n:'t_pol2'},
+        {t:'Brillo Sectorizado UV',n:'t_brillo'},
+        {t:'Servicios extras tarjetas',n:'t_extras'},
+        {t:'🔙 Inicio',n:'start'},
+      ]
+    },
+    t_pol1:{msg:'💳 <b>Tarjetas Polimate — 1 cara</b><br>1.000 tarjetas · Laminado mate 1 lado · Impresión Offset<br>Plazo: 5 a 7 días hábiles<br><br><b>$35.900</b> IVA incl.',wsp:true,opts:[{t:'📐 Ver materiales y medidas',n:'t_mat'},{t:'🔙 Volver',n:'tarjetas'},{t:'🏠 Inicio',n:'start'}]},
+    t_pol2:{msg:'💳 <b>Tarjetas Polimate — 2 caras</b><br>1.000 tarjetas · Laminado mate ambos lados · Impresión Offset<br>Plazo: 5 a 7 días hábiles<br><br><b>$46.500</b> IVA incl.',wsp:true,opts:[{t:'📐 Ver materiales y medidas',n:'t_mat'},{t:'🔙 Volver',n:'tarjetas'},{t:'🏠 Inicio',n:'start'}]},
+    t_brillo:{msg:'✨ <b>Tarjetas Brillo Sectorizado UV</b><br>1.000 tarjetas · Impresión 2 caras · Brillo UV 1 cara<br>Laminado mate ambos lados · Impresión Offset<br>Plazo: 15 días hábiles<br><br><b>$77.900</b> IVA incl.',wsp:true,opts:[{t:'📐 Ver materiales y técnica',n:'t_mat_b'},{t:'🔙 Volver',n:'tarjetas'},{t:'🏠 Inicio',n:'start'}]},
+    t_extras:{msg:'⚙️ <b>Servicios extras para tarjetas</b> (IVA incl.):<br><br>• Servicio de diseño: <b>$11.900</b><br>• Despunte de tarjetas: <b>$11.900</b><br>• Perforación para etiquetas: <b>$11.900</b>',wsp:true,opts:[{t:'🔙 Volver',n:'tarjetas'},{t:'🏠 Inicio',n:'start'}]},
+    t_mat:{msg:'📐 <b>Materiales y medidas — Tarjetas Polimate</b><br><br>• Papel couché 350 gramos<br>• Medida: 9×5,5 cm aprox.<br>• Acabado: termolaminado mate<br><br>El laminado mate aporta protección extra, elegancia y profesionalismo al resultado final.',opts:[{t:'🔙 Volver',n:'tarjetas'}]},
+    t_mat_b:{msg:'📐 <b>Materiales y técnica — Brillo Sectorizado</b><br><br>• Papel couché 350 gramos · Medida: 9×5,5 cm aprox.<br>• El Brillo Sectorizado (barniz UV selectivo) aplica un barniz transparente brillante con leve relieve únicamente en áreas específicas del diseño (logo, letras).<br>• Se aplica sobre la impresión y el laminado mate, generando un contraste de texturas único.',opts:[{t:'🔙 Volver',n:'tarjetas'}]},
+
+    /* ── FLYERS ── */
+    flyers:{
+      msg:'📃 ¿Qué tipo de impresión necesitas?',
+      opts:[
+        {t:'1.000 flyers — 1 cara $34.900',n:'fly_1'},
+        {t:'1.000 flyers — 2 caras $65.900',n:'fly_2'},
+        {t:'Servicio de diseño',n:'fly_dis'},
+        {t:'Otro tamaño',n:'fly_otro'},
+        {t:'🔙 Inicio',n:'start'},
+      ]
+    },
+    fly_1:{msg:'📃 <b>1.000 Flyers — 1 cara</b><br>Tamaño: 10×14 cm · Papel couché 170 grs.<br><br><b>$34.900</b> IVA incl.',wsp:true,opts:[{t:'🔙 Volver',n:'flyers'},{t:'🏠 Inicio',n:'start'}]},
+    fly_2:{msg:'📃 <b>1.000 Flyers — 2 caras</b><br>Tamaño: 10×14 cm · Papel couché 170 grs.<br><br><b>$65.900</b> IVA incl.',wsp:true,opts:[{t:'🔙 Volver',n:'flyers'},{t:'🏠 Inicio',n:'start'}]},
+    fly_dis:{msg:'🎨 <b>Diseño de 1 flyer</b><br><br><b>$11.900</b> IVA incl.',wsp:true,opts:[{t:'🔙 Volver',n:'flyers'},{t:'🏠 Inicio',n:'start'}]},
+    fly_otro:{msg:'📏 Sí realizamos flyers en otros tamaños. Escríbenos al WhatsApp para cotizar el tamaño que buscas.',wsp:true,opts:[{t:'🔙 Volver',n:'flyers'}]},
+
+    /* ── STICKERS ── */
+    stickers:{
+      msg:'⬡ ¿Qué tipo de sticker necesitas?',
+      opts:[
+        {t:'Stickers DTF UV',n:'s_dtf'},
+        {t:'Stickers troquelados PVC por m²',n:'s_mt2'},
+        {t:'🔙 Inicio',n:'start'},
+      ]
+    },
+    s_dtf:{msg:'⬡ <b>Stickers DTF UV</b><br>Alta resolución, colores vibrantes (IVA incl.):<br><br>• Pliego <b>20×58 cm</b>: <b>$14.900</b><br>• Pliego <b>100×58 cm</b>: <b>$57.900</b><br><br><small>La cantidad de stickers depende del tamaño de tu diseño.</small>',wsp:true,opts:[{t:'🔙 Volver',n:'stickers'},{t:'🏠 Inicio',n:'start'}]},
+    s_mt2:{msg:'⬡ <b>Stickers troquelados PVC</b><br>Rectos, redondos, cortados a la forma · Semibrillante<br><br>Precio por metro cuadrado: <b>$34.900</b> IVA incl.<br><br><small>La cantidad de stickers depende del tamaño de tu diseño o etiqueta.</small>',wsp:true,opts:[{t:'🔙 Volver',n:'stickers'},{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── PENDÓN ── */
+    pendones:{msg:'📍 <b>Pendón Roller 80×200 cm</b><br>Incluye estructura de aluminio y bolso de transporte.<br><br><b>$65.900</b> IVA incl.',wsp:true,opts:[{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── LOGOS ── */
+    logos:{msg:'🎨 <b>Diseño de Logo & Branding</b> — Identidad visual 100% original.',prices:[['Plan Inicia','$45.900'],['Plan Semi Pro','$69.900'],['Plan Pro','$89.900']],link:{t:'Ver qué incluye cada plan',u:'planes.html'},wsp:true,opts:[{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── REGALOS ── */
+    regalos:{msg:'🎁 <b>Regalos Corporativos</b> — Tazas, mousepads, libretas y más.<br>Cotización personalizada según producto.',link:{t:'Ver opciones',u:'regalos_corporativos.html'},wsp:true,opts:[{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── OTROS SERVICIOS ── */
+    otros:{msg:'✅ Sí podemos realizar ese tipo de proyecto. Escríbenos al WhatsApp para ver los detalles y cómo podemos ayudarte.',wsp:true,opts:[{t:'🏠 Inicio',n:'start'}]},
+
+    /* ── NO ENCONTRADO ── */
+    not_found:{msg:'🔍 No encontré resultados para tu búsqueda.<br>Prueba con: <b>talonarios, recetarios, flyers, logos, tarjetas, stickers, pendones</b>... o escríbenos al WhatsApp.',wsp:true,opts:[{t:'📋 Ver todos los servicios',n:'start'}]},
+  };
+
+    const KEYWORDS = {
+    talonarios:['talonario','formulario','comprobante','orden','boleta','recibo','autocopiativo','copia quimica'],
+    recetarios:['receta','recetario','medico','médico','doctor','veterinario','dental','dentista','psicologo','psicólogo','oculista','salud'],
+    bingos:['bingo','rifa','ticket','sorteo','evento'],
+    tarjetas:['tarjeta','polimate','presentacion','presentación','brillo','sectorizado'],
+    flyers:['flyer','volante','folleto'],
+    logos:['logo','marca','branding','identidad','imagotipo','logotipo'],
+    pendones:['pendon','pendón','roller','banner','lona'],
+    stickers:['sticker','adhesivo','dtf','uv','calcomania','vinilo','mt2'],
+    regalos:['regalo','corporativo','taza','mousepad','libreta'],
+  };
+
+  function detectKeyword(text){
+    const t = text.toLowerCase();
+    for(const [key,words] of Object.entries(KEYWORDS)){
+      if(words.some(w=>t.includes(w))) return key;
     }
+    if(['impresion','impresión','diptico','díptico','triptico','brochure','catalogo','separador','diploma','certificado','revista'].some(w=>t.includes(w))) return 'otros';
+    return null;
+  }
 
-    /* Animación 1: Flotación suave (arriba y abajo) */
-    @keyframes floating {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
+  function addMsg(html, isUser=false){
+    const div = document.createElement('div');
+    div.className = 'chat-msg' + (isUser?' user':'');
+    if(!isUser) div.innerHTML = '<div class="chat-msg-avatar">A</div><div class="chat-bubble">'+html+'</div>';
+    else div.innerHTML = '<div class="chat-bubble">'+html+'</div>';
+    chatMessages.appendChild(div);
+    const isFirst = chatMessages.children.length <= 2;
+    chatMessages.scrollTop = isFirst ? 0 : chatMessages.scrollHeight;
+    return div;
+  }
+
+  function showTyping(){
+    const div = document.createElement('div');
+    div.className = 'chat-msg'; div.id = 'chatTyping';
+    div.innerHTML = '<div class="chat-msg-avatar">A</div><div class="chat-bubble"><div class="chat-typing"><span></span><span></span><span></span></div></div>';
+    chatMessages.appendChild(div);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  function removeTyping(){ const t=document.getElementById('chatTyping'); if(t)t.remove(); }
+
+  function buildContent(node){
+    let html = node.msg || '';
+    if(node.prices){
+      html += '<div class="chat-price-table">';
+      node.prices.forEach(([q,p])=>{ html += '<div class="chat-price-row"><span>'+q+'</span><span class="chat-price-val">'+p+'</span></div>'; });
+      html += '</div>';
     }
+    if(node.link) html += '<br><a class="chat-link-btn" href="'+node.link.u+'">📄 '+node.link.t+'</a>';
+    if(node.wsp) html += '<br><a class="chat-wsp-btn" href="'+WSP+'" target="_blank"><i class="fab fa-whatsapp"></i> Comprar por WhatsApp</a>';
+    return html;
+  }
 
-    /* Animación 2: Pulso de onda sutil detrás del botón */
-    @keyframes pulse-green {
-        0% {
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-        }
-        70% {
-            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-        }
-        100% {
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-        }
+  function showNode(key, delay=600){
+    showTyping();
+    setTimeout(()=>{
+      removeTyping();
+      const node = TREE[key] || TREE['not_found'];
+      addMsg(buildContent(node));
+      if(node.opts && node.opts.length){
+        const optDiv = document.createElement('div');
+        optDiv.className = 'chat-options';
+        node.opts.forEach(o=>{
+          const b = document.createElement('button');
+          b.className = 'chat-opt-btn';
+          b.textContent = o.t;
+          b.addEventListener('click',()=>{
+            addMsg(o.t, true);
+            optDiv.remove();
+            showNode(o.n);
+          });
+          optDiv.appendChild(b);
+        });
+        chatMessages.appendChild(optDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    }, delay);
+  }
+
+  function handleInput(text){
+    if(!text.trim()) return;
+    addMsg(text.replace(/</g,'&lt;'), true);
+    chatInput.value = '';
+    const key = detectKeyword(text);
+    showNode(key || 'not_found');
+  }
+
+  chatBtn.addEventListener('click',()=>{
+    chatPanel.classList.toggle('open');
+    if(chatPanel.classList.contains('open') && !chatMessages.children.length){
+      showNode('start', 800);
     }
+  });
+  chatClose.addEventListener('click',()=>chatPanel.classList.remove('open'));
+  chatSend.addEventListener('click',()=>handleInput(chatInput.value));
+  chatInput.addEventListener('keydown',e=>{ if(e.key==='Enter') handleInput(chatInput.value); });
+})();
 
-    /* Estilo del icono para que respire */
-    .whatsapp-float i {
-        animation: icon-wiggle 5s infinite;
-    }
-
-    @keyframes icon-wiggle {
-        0%, 90%, 100% { transform: rotate(0deg); }
-        92% { transform: rotate(-15deg); }
-        95% { transform: rotate(15deg); }
-        97% { transform: rotate(-15deg); }
-    }
-</style>
-
-<a href="https://wa.me/56998105491" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-
-  </body>
+/* SCROLL REVEAL */
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:0.1});
+document.querySelectorAll('.rev').forEach(el=>obs.observe(el));
+</script>
+</body>
 </html>
